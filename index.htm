@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Abbas Safardoost - Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="files/w3.css">
+  <link rel="stylesheet" href="files/css.css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/8e177582ca.js" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+  <style>
+    body {
+      font-family: "Montserrat", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    b {
+      font-family: "Monospace", "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+      margin-bottom: 12px
+    }
+
+    .bgimg {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('imgs/MyPhoto.jpg');
+      min-height: 100%;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      padding-left: 10%;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: grey;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      color: black;
+      background-color: #d9dbdb;
+    }
+
+    #myBtn {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Fixed/sticky position */
+      bottom: 20px;
+      /* Place the button at the bottom of the page */
+      right: 30px;
+      /* Place the button 30px from the right */
+      z-index: 99;
+      /* Make sure it does not overlap */
+      border: none;
+      /* Remove borders */
+      outline: none;
+      /* Remove outline */
+      background-color: rgb(0, 0, 0);
+      /* Set a background color */
+      color: white;
+      /* Text color */
+      cursor: pointer;
+      /* Add a mouse pointer on hover */
+      padding: 15px;
+      /* Some padding */
+      border-radius: 10px;
+      /* Rounded corners */
+      font-size: 18px;
+      /* Increase font size */
+      opacity: 50%;
+    }
+
+    #myBtn:hover {
+      background-color: #555;
+      /* Add a dark-grey background on hover */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Sidebar with image -->
+  <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:30%">
+    <div class="bgimg"></div>
+  </nav>
+
+  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright"
+      style="padding:0 12px;">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center">
+      <a href="Home-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+      <a href="Resume-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Resume</a>
+      <a href="Blog-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Blog</a>
+      <a href="Tutorial-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+        onclick="closeNav()">Tutorials</a>
+      <a href="NoteBooks-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+        onclick="closeNav()">NoteBooks</a>
+      <a href="About-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+      <a href="Contact-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+        onclick="closeNav()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="w3-main w3-padding-large" style="margin-left:30%">
+
+    <!-- Menu icon to open sidebar -->
+    <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
+      onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+    <!-- Header -->
+    <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+      <h1 class="w3-jumbo"><b>Abbas Safardoost</b></h1>
+
+      <div class="w3-container">
+        <h5 class="w3-opacity">
+          <b>Psycholinguist, NLP Specialist, Translator.</b>
+        </h5>
+
+        <p>
+          <a href="https://scholar.google.com/citations?user=sIJPorYAAAAJ&hl=en&oi=ao" style="text-decoration:none">
+            <iconify-icon icon="academicons:google-scholar"
+              class="fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey w3-hover-opacity"></iconify-icon>
+          </a>
+          <a href="https://www.orcid.org/0000-0003-1814-5550" style="text-decoration:none">
+            <iconify-icon icon="academicons:orcid"
+              class="fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey w3-hover-opacity"></iconify-icon>
+          </a>
+          <a href="https://www.researchgate.net/profile/Abbas-Safardoost" style="text-decoration:none">
+            <iconify-icon icon="academicons:researchgate-square"
+              class="fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey w3-hover-opacity"></iconify-icon>
+          </a>
+          <a href="https://github.com/asdoost" style="text-decoration:none">
+            <iconify-icon icon="akar-icons:github-fill"
+              class="fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey w3-hover-opacity"></iconify-icon>
+          </a>
+        </p>
+      </div>
+      <img src="imgs/MyPhoto.jpg" class="w3-image w3-hide-large w3-hide-small w3-round"
+        style="display:block;width:60%;margin:auto;">
+      <img src="imgs/MyPhoto.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+      <ul>
+        <li><a href="#experience"><b>Work Experience</b></a></li>
+        <li><a href="#education"><b>Education</b></a></li>
+        <li><a href="#publication"><b>Publications</b></a></li>
+        <li><a href="#projects"><b>Projects</b></a></li>
+        <li><a href="#certificates"><b>Certificates</b></a></li>
+        <li><a href="#skills"><b>Skills</b></a></li>
+        <li><a href="#languages"><b>Languages</b></a></li>
+      </ul>
+    </header>
+
+    <!-- Work Experience Section -->
+    <div class="w3-padding-32 w3-content" id="experience">
+      <h2 class="w3-text-grey">
+        <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>
+        Work Experience
+      </h2>
+      <hr style="border-color: #607d8b; border-width: 2px;">
+
+      <div class="w3-container">
+        <h5>
+          <i class="fa fa-briefcase fa-fw w3-margin-right w3-xlarge w3-text-blue-grey"></i>
+          <b class="w3-opacity">Freelance Translator & Researcher</b>
+        </h5>
+        <h6 class="w3-text-blue-grey">
+          <i class="fa fa-calendar fa-fw w3-margin-right w3-xlarge w3-text-blue-grey"></i>
+          <b class="w3-opacity">2015 - </b>
+          <span class="w3-tag w3-blue-grey w3-round">Current</span>
+        </h6>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <h5>
+          <i class="fa fa-briefcase fa-fw w3-margin-right w3-xlarge w3-text-blue-grey"></i>
+          <b class="w3-opacity">Lexicographer</b>
+        </h5>
+        <h6 class="w3-text-blue-grey">
+          <i class="fa fa-calendar fa-fw w3-margin-right w3-xlarge w3-text-blue-grey"></i>
+          <b class="w3-opacity">2013 - 2015</b>
+        </h6>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <h5>
+          <i class="fa fa-briefcase fa-fw w3-margin-right w3-xlarge w3-text-blue-grey"></i>
+          <b class="w3-opacity">Copy Writer</b>
+        </h5>
+        <h6 class="w3-text-blue-grey">
+          <i class="fa fa-calendar fa-fw w3-margin-right w3-xlarge w3-text-blue-grey"></i>
+          <b class="w3-opacity">2010 - 2013</b>
+        </h6>
+      </div>
+    </div>
+    <!-- End Work Experience Section -->
+
+    <!-- Education Section -->
+    <div class="w3-padding-32 w3-content" id="education">
+      <h2 class="w3-text-grey">
+        <i class="fas fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>
+        Education
+      </h2>
+      <hr style="border-color: #607d8b; border-width: 2px;">
+
+      <div class="w3-container">
+        <h5>
+          <iconify-icon icon="fa-solid:university" class="w3-margin-right w3-xlarge w3-text-blue-grey"></iconify-icon>
+          <b class="w3-opacity">Tarbiat Modares University</b>
+        </h5>
+        <h6>
+          <i class="fa fa-calendar fa-fw w3-margin-right w3-xlarge w3-text-blue-grey"></i>
+          <b class="w3-opacity">Sep 2019 - </b>
+          <span class="w3-tag w3-blue-grey w3-round">Current</span>
+        </h6>
+        <h6>
+          <i class="fas fa-graduation-cap fa-fw w3-margin-right w3-xlarge w3-text-blue-grey"></i>
+          <b class="w3-opacity">Ph.D in Linguistics</b>
+        </h6>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <h5>
+          <iconify-icon icon="fa-solid:university" class="w3-margin-right w3-xlarge w3-text-blue-grey"></iconify-icon>
+          <b class="w3-opacity">Tarbiat Modares University</b>
+        </h5>
+        <h6>
+          <i class="fa fa-calendar fa-fw w3-margin-right w3-xlarge w3-text-blue-grey"></i>
+          <b class="w3-opacity">Sep 2013 - 2016</b>
+        </h6>
+        <h6>
+          <i class="fas fa-graduation-cap fa-fw w3-margin-right w3-xlarge w3-text-blue-grey"></i>
+          <b class="w3-opacity">Master Degree in Linguistics</b>
+        </h6>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <h5>
+          <iconify-icon icon="fa-solid:university" class="w3-margin-right w3-xlarge w3-text-blue-grey"></iconify-icon>
+          <b class="w3-opacity">Shiraz University</b>
+        </h5>
+        <h6>
+          <i class="fa fa-calendar fa-fw w3-margin-right w3-xlarge w3-text-blue-grey"></i>
+          <b class="w3-opacity">Sep 2009 - 2013</b>
+        </h6>
+        <h6>
+          <i class="fas fa-graduation-cap fa-fw w3-margin-right w3-xlarge w3-text-blue-grey"></i>
+          <b class="w3-opacity">Bachelor Degree in Linguistics</b>
+        </h6>
+      </div>
+    </div>
+    <!-- End Education Section -->
+
+    <!--  Publication Section -->
+    <div class="w3-padding-32 w3-content" id="publication">
+      <h2 class="w3-text-grey">
+        <i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>
+        Publication
+      </h2>
+      <hr style="border-color: #607d8b; border-width: 2px;">
+
+      <h3 class="w3-text-grey w3-padding-14">Journal Articles</h3>
+      <hr>
+
+      <div class="w3-container">
+        <p>
+          <iconify-icon icon="ph:article-medium-bold" class="w3-margin-right w3-xlarge w3-text-blue-grey">
+          </iconify-icon>
+          <a href="https://rjhll.basu.ac.ir/article_4789.html?lang=en">
+            <b class="w3-opacity">Words and Rules theory vs. Generative Phonology: A Study of the Past Tense Inflection
+              of Persian Verbs</b>
+          </a>
+        </p>
+        <p>
+          <iconify-icon icon="bi:journal" class="w3-margin-right w3-xlarge w3-text-blue-grey"></iconify-icon>
+          <b class="w3-opacity">Iranian Journal of Comparative Linguistic Research</b>
+        </p>
+        <p><i class="fa fa-calendar w3-margin-right w3-xlarge w3-text-blue-grey"></i></span>
+          <b class="w3-opacity">2022</b>
+        </p>
+        <p>
+          <iconify-icon icon="academicons:doi" class="w3-margin-right w3-xlarge w3-text-blue-grey"></iconify-icon>
+          <a href="https://rjhll.basu.ac.ir/article_4789.html?lang=en">10.22084/rjhll.2022.26069.2209</a>
+        </p>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <p>
+          <iconify-icon icon="ph:article-medium-bold" class="w3-margin-right w3-xlarge w3-text-blue-grey">
+          </iconify-icon>
+          <a href="https://rjhll.basu.ac.ir/article_4789.html?lang=en">
+            <b class="w3-opacity">Distribution of Nasals in Consonant Clusters; and the Distributional-phonological
+              Characteristics of Loanwords in Persian</b>
+          </a>
+        </p>
+        <p>
+          <iconify-icon icon="bi:journal" class="w3-margin-right w3-xlarge w3-text-blue-grey"></iconify-icon>
+          <b class="w3-opacity">Language Science</b>
+        </p>
+        <p><i class="fa fa-calendar w3-margin-right w3-xlarge w3-text-blue-grey"></i></span>
+          <b class="w3-opacity">2020</b>
+        </p>
+        <p>
+          <iconify-icon icon="academicons:doi" class="w3-margin-right w3-xlarge w3-text-blue-grey"></iconify-icon>
+          <a href="https://doi.org/10.22054/ls.2019.36693.1139">10.22054/ls.2019.36693.1139</a>
+        </p>
+        <br>
+      </div>
+
+      <!-- Start of Encyclopedia -->
+      <h3 class="w3-text-grey w3-padding-14">Encyclopedia Entries</h3>
+      <hr>
+
+      <div class="w3-container">
+        <p>
+          <iconify-icon icon="cil:book" class="w3-margin-right w3-xlarge w3-text-blue-grey"></iconify-icon>
+          <b class="w3-opacity">Encyclopedia of Persian Language and Literature (vol. VI)</b>
+        </p>
+        <p>
+          <iconify-icon icon="akar-icons:book" class="w3-margin-right w3-xlarge w3-text-blue-grey"></iconify-icon>
+          <b class="w3-opacity">Vafa Zavvarei</b>
+        </p>
+        <p>
+          <iconify-icon icon="file-icons:microsoft-publisher" class="w3-margin-right w3-xlarge w3-text-blue-grey">
+          </iconify-icon>
+          <b class="w3-opacity">Academy of Persian Literature and Language Press</b>
+        </p>
+        <p><i class="fa fa-calendar w3-margin-right w3-xlarge w3-text-blue-grey"></i></span>
+          <b class="w3-opacity">2018</b>
+        </p>
+        <br>
+      </div>
+      <!-- End of Encyclopedia -->
+
+      <!-- Start of Dictionary -->
+      <h3 class="w3-text-grey w3-padding-14">Dictionaries</h3>
+      <hr>
+
+      <div class="w3-container">
+        <p>
+          <iconify-icon icon="fluent-mdl2:dictionary" class="w3-margin-right w3-xlarge w3-text-blue-grey">
+          </iconify-icon>
+          <b class="w3-opacity">The Comprehensive Dictionary of Persian Language (vol. II)</b>
+        </p>
+        <p>
+          <iconify-icon icon="file-icons:microsoft-publisher" class="w3-margin-right w3-xlarge w3-text-blue-grey">
+          </iconify-icon>
+          <b class="w3-opacity">Academy of Persian Literature and Language Press</b>
+        </p>
+        <p><i class="fa fa-calendar w3-margin-right w3-xlarge w3-text-blue-grey"></i></span>
+          <b class="w3-opacity">2017</b>
+        </p>
+      </div>
+      <!-- End of Dictionary -->
+    </div>
+    <!-- End Publication Section -->
+
+    <!--  Certificates Section -->
+    <div class="w3-padding-32 w3-content" id="certificates">
+      <h2 class="w3-text-grey">
+        <iconify-icon icon="icon-park-outline:certificate" class="w3-margin-right w3-text-blue-grey"></iconify-icon>
+        Certificates
+      </h2>
+      <hr style="border-color: #607d8b; border-width: 2px;">
+
+      <div class="w3-container">
+        <p>
+          <iconify-icon icon="subway:title" class="blue-gray-icon"></iconify-icon>
+          <b class="w3-opacity">Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep
+            Learning</b>
+        </p>
+        <p>
+          <iconify-icon icon="academicons:coursera" class="blue-gray-icon"></iconify-icon>
+          <a href="https://www.deeplearning.ai">DeepLearning.AI</a>
+        </p>
+        <p>
+          <iconify-icon icon="akar-icons:link-chain" class="blue-gray-icon"></iconify-icon>
+          <a href="https://www.coursera.org/account/accomplishments/verify/K6Y4HLM8EWTS">K6Y4HLM8EWTS</a>
+        </p>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <p>
+          <iconify-icon icon="subway:title" class="blue-gray-icon"></iconify-icon>
+          <b class="w3-opacity">Natural Language Processing in TensorFlow</b>
+        </p>
+        <p>
+          <iconify-icon icon="academicons:coursera" class="blue-gray-icon"></iconify-icon>
+          <a href="https://www.deeplearning.ai">DeepLearning.AI</a>
+        </p>
+        <p>
+          <iconify-icon icon="akar-icons:link-chain" class="blue-gray-icon"></iconify-icon>
+          <a href="https://www.coursera.org/account/accomplishments/verify/L95YZVA24QBJ">L95YZVA24QBJ</a>
+        </p>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <p>
+          <iconify-icon icon="subway:title" class="blue-gray-icon"></iconify-icon>
+          <b class="w3-opacity">Natural Language Processing with Classification and Vector Spaces</b>
+        </p>
+        <p>
+          <iconify-icon icon="academicons:coursera" class="blue-gray-icon"></iconify-icon>
+          <a href="https://www.deeplearning.ai">DeepLearning.AI</a>
+        </p>
+        <p>
+          <iconify-icon icon="akar-icons:link-chain" class="blue-gray-icon"></iconify-icon>
+          <a href="https://www.coursera.org/account/accomplishments/certificate/39PT7EBFHUPK">39PT7EBFHUPK</a>
+        </p>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <p>
+          <iconify-icon icon="subway:title" class="blue-gray-icon"></iconify-icon>
+          <b class="w3-opacity">Fine Tune BERT for Text Classification with TensorFlow</b>
+        </p>
+        <p>
+          <iconify-icon icon="academicons:coursera" class="blue-gray-icon"></iconify-icon>
+          <a href="https://www.coursera.org">Coursera</a>
+        </p>
+        <p>
+          <iconify-icon icon="akar-icons:link-chain" class="blue-gray-icon"></iconify-icon>
+          <a href="https://www.coursera.org/account/accomplishments/certificate/9AWKHCK5HBV3">9AWKHCK5HBV3</a>
+        </p>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <p>
+          <iconify-icon icon="subway:title" class="blue-gray-icon"></iconify-icon>
+          <b class="w3-opacity">Basic Statistics</b>
+        </p>
+        <p>
+          <iconify-icon icon="academicons:coursera" class="blue-gray-icon"></iconify-icon>
+          University of Amsterdam
+        </p>
+        <p>
+          <iconify-icon icon="akar-icons:link-chain" class="blue-gray-icon"></iconify-icon>
+          <a href="https://www.coursera.org/account/accomplishments/verify/YMC6JZQFBTPG">YMC6JZQFBTPG</a>
+        </p>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <p>
+          <iconify-icon icon="subway:title" class="blue-gray-icon"></iconify-icon>
+          <b class="w3-opacity">Quantitative Methods</b>
+        </p>
+        <p>
+          <iconify-icon icon="academicons:coursera" class="blue-gray-icon"></iconify-icon>
+          University of Amsterdam
+        </p>
+        <p>
+          <iconify-icon icon="akar-icons:link-chain" class="blue-gray-icon"></iconify-icon>
+          <a href="https://www.coursera.org/account/accomplishments/verify/DFLY7NQ2TLKW">DFLY7NQ2TLKW</a>
+        </p>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <p>
+          <iconify-icon icon="subway:title" class="blue-gray-icon"></iconify-icon>
+          <b class="w3-opacity">Introduction to Git and GitHub</b>
+        </p>
+        <p>
+          <iconify-icon icon="akar-icons:google-fill" class="blue-gray-icon"></iconify-icon>
+          Google
+        </p>
+        <p>
+          <iconify-icon icon="akar-icons:link-chain" class="blue-gray-icon"></iconify-icon>
+          <a href="https://www.coursera.org/account/accomplishments/verify/QXC4S4SUSJVX">QXC4S4SUSJVX</a>
+        </p>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <p>
+          <iconify-icon icon="subway:title" class="blue-gray-icon"></iconify-icon>
+          <b class="w3-opacity">Crash Course on Python</b>
+        </p>
+        <p>
+          <iconify-icon icon="akar-icons:google-fill" class="blue-gray-icon"></iconify-icon>
+          Google
+        </p>
+        <p>
+          <iconify-icon icon="akar-icons:link-chain" class="blue-gray-icon"></iconify-icon>
+          <a href="https://www.coursera.org/account/accomplishments/verify/TY2SKCFHLWRL">TY2SKCFHLWRL</a>
+        </p>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <p>
+          <iconify-icon icon="subway:title" class="blue-gray-icon"></iconify-icon>
+          <b class="w3-opacity">Troubleshooting and Debugging Techniques</b>
+        </p>
+        <p>
+          <iconify-icon icon="akar-icons:google-fill" class="blue-gray-icon"></iconify-icon>
+          Google
+        </p>
+        <p>
+          <iconify-icon icon="akar-icons:link-chain" class="blue-gray-icon"></iconify-icon>
+          <a href="https://www.coursera.org/account/accomplishments/verify/SMK6EJC3NKMW">SMK6EJC3NKMW</a>
+        </p>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <p>
+          <iconify-icon icon="subway:title" class="blue-gray-icon"></iconify-icon>
+          <b class="w3-opacity">Introduction to Natural Language Processing in Python</b>
+        </p>
+        <p>
+          <iconify-icon icon="academicons:coursera" class="blue-gray-icon"></iconify-icon>
+          Coursera
+        </p>
+        <p>
+          <iconify-icon icon="akar-icons:link-chain" class="blue-gray-icon"></iconify-icon>
+          <a href="https://www.coursera.org/account/accomplishments/verify/84KDYLAJ9C29">84KDYLAJ9C29</a>
+        </p>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <p>
+          <iconify-icon icon="subway:title" class="blue-gray-icon"></iconify-icon>
+          <b class="w3-opacity">Python for Everybody (Specialization)</b>
+        </p>
+        <p>
+          <iconify-icon icon="academicons:coursera" class="blue-gray-icon"></iconify-icon>
+          University of Michigan
+        </p>
+        <p>
+          <iconify-icon icon="akar-icons:link-chain" class="blue-gray-icon"></iconify-icon>
+          <a href="https://www.coursera.org/account/accomplishments/specialization/G9Y6UZHB7MVK">G9Y6UZHB7MVK</a>
+        </p>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <p>
+          <iconify-icon icon="subway:title" class="blue-gray-icon"></iconify-icon>
+          <b class="w3-opacity">The Bilingual Brain</b>
+        </p>
+        <p>
+          <iconify-icon icon="academicons:coursera" class="blue-gray-icon"></iconify-icon>
+          University of Houston
+        </p>
+        <p>
+          <iconify-icon icon="akar-icons:link-chain" class="blue-gray-icon"></iconify-icon>
+          <a href="https://www.coursera.org/account/accomplishments/verify/GNWHC4YT5U3B">GNWHC4YT5U3B</a>
+        </p>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <p>
+          <iconify-icon icon="subway:title" class="blue-gray-icon"></iconify-icon>
+          <b class="w3-opacity">Fundamental Neuroscience for Neuroimaging</b>
+        </p>
+        <p>
+          <iconify-icon icon="academicons:coursera" class="blue-gray-icon"></iconify-icon>
+          John Hopkins University
+        </p>
+        <p>
+          <iconify-icon icon="akar-icons:link-chain" class="blue-gray-icon"></iconify-icon>
+          <a href="https://www.coursera.org/account/accomplishments/verify/DUKZ5M7CM6G9">DUKZ5M7CM6G9</a>
+        </p>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <p>
+          <iconify-icon icon="subway:title" class="blue-gray-icon"></iconify-icon>
+          <b class="w3-opacity">Introduction to Psychology</b>
+        </p>
+        <p>
+          <iconify-icon icon="academicons:coursera" class="blue-gray-icon"></iconify-icon>
+          University of Toronto
+        </p>
+        <p>
+          <iconify-icon icon="akar-icons:link-chain" class="blue-gray-icon"></iconify-icon>
+          <a href="https://www.coursera.org/account/accomplishments/verify/BYGC3ETHDDW6">BYGC3ETHDDW6</a>
+        </p>
+      </div>
+
+    </div>
+    <!-- End Certificates Section -->
+
+    <!-- My Skills Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="skills">
+      <h2>
+        <iconify-icon icon="carbon:skill-level-advanced" class="w3-margin-right w3-text-blue-grey"></iconify-icon>
+        My Skills
+      </h2>
+      <hr style="border-color: #607d8b; border-width: 2px;">
+      <p class="w3-wide">Python</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
+      </div>
+      <p class="w3-wide">Web Crawling</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide">Git</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide">Tkinter</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:75%">75%</div>
+      </div>
+      <p class="w3-wide">HTML</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+      </div>
+      <br>
+    </div>
+    <!-- End My Skills Section -->
+
+    <!-- Language Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="languages">
+      <h2>
+        <iconify-icon icon="fluent-mdl2:locale-language" class="w3-margin-right w3-xxlarge w3-text-blue-grey">
+        </iconify-icon>
+        Languages
+      </h2>
+      <hr style="border-color: #607d8b; border-width: 2px;">
+      <p class="w3-wide">Persian</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide">English</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:100%">100%</div>
+      </div>
+    </div>
+    <!-- End Language Section -->
+
+    <!-- Projects Section -->
+    <div class="w3-padding-32 w3-content" id="projects">
+      <h2 class="w3-text-grey">
+        <iconify-icon icon="fa6-solid:diagram-project" class="w3-margin-right w3-text-blue-grey"></iconify-icon>
+        Projects
+      </h2>
+      <hr style="border-color: #607d8b; border-width: 2px;">
+
+      <div class="w3-container">
+        <h6><span class="w3-opacity">Title: </span><b class="w3-opacity">PTW1400</b></h6>
+        <p>
+        <h6 class="w3-opacity">Goals: </h6>
+        PTW1400 <i>(Persian TWeets of 1400)</i> is a project in which we developed a corpus
+        containing one milion Persian tweets of the year 1400 (Shamsi Hijri calendar). A part of the corpus
+        (100,000 tweets; about two milions tokens) is manually normalized, tagged, and lemmatized.
+        </p>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <h6><span class="w3-opacity">Title: </span>
+          <b class="w3-opacity">The Psycholinguistic Study of Verb Inflection</b>
+        </h6>
+        <p>
+        <h6 class="w3-opacity">Goals: </h6>
+        In this project, we study how regular and irregular verbs are produced
+        and perceived, which mechanisms (i.e. rule and rote) involve in the process
+        of verb inflection, and how verbs are organized in the brain. Our primary
+        focus is on past tense inflection.
+        </p>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <h6><span class="w3-opacity">Title: </span>
+          <b class="w3-opacity">Phonotactics ,Phonostatistics & Syllabification of Persian Words</b>
+        </h6>
+        <p>
+        <h6 class="w3-opacity">Goals: </h6>
+        In This Project we study phonotactics, phonostatistics,
+        and syllabification of almost 55000 Persian words.
+        </p>
+        </br>
+      </div>
+
+    </div>
+    <!-- End Projects Section -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-- END PAGE CONTENT -->
+  </div>
+
+  <script>
+    // Open and close sidebar
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "70%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+</body>
+
+</html>
