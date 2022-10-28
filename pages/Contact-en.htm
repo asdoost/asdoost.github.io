@@ -91,9 +91,33 @@
 
       <div class="w3-section">
         <p><i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right w3-text-blue-grey"></i> Tehran, Iran</p>
-        <p><i class="fa fa-phone fa-fw w3-xlarge w3-margin-right w3-text-blue-grey"></i> Phone: +98 991 496 ****</p>
-        <p><i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right w3-text-blue-grey"> </i> Email:
-          a.safar*****@gmail.com</p>
+        <p>
+          <i class="fa fa-phone fa-fw w3-xlarge w3-margin-right w3-text-blue-grey"></i> Phone:
+          <?php _e('E-mail:', 'theme') ?>
+          <span onclick="ShowPhone()" id="sphone" style="display:inline">
+            <a href="#">
+              Click to Show Phone Number
+            </a>
+          </span>
+          <span onclick="HidePhone()" id="hphone" style="display:none">
+            +991 496 9399
+          </span>
+        </p>
+
+        <p>
+          <i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right w3-text-blue-grey"></i> Email:
+          <?php _e('E-mail:', 'theme') ?>
+          <span onclick="ShowEmail()" id="semail" style="display:inline">
+            <a href="##" style="display:inline">
+              Click to Show E-mail
+            </a>
+          </span>
+          <span onclick="HideEmail()" id="hemail" style="display:none">
+              a.safardoust@gmail.com
+          </span>
+        </p>
+
+        <br>
         <p>
           <i class="fas fa-link fa-fw w3-xlarge w3-margin-right w3-text-blue-grey"> </i>
           <a href="https://scholar.google.com/citations?user=sIJPorYAAAAJ&hl=en&oi=ao" style="text-decoration:none">
@@ -129,6 +153,47 @@
 
     function closeNav() {
       document.getElementById("mySidebar").style.display = "none";
+    }
+    
+    function ShowEmail() {
+      var x = document.getElementById('semail');
+      var y = document.getElementById('hemail');
+      if (x.style.display == 'none') {
+        x.style.display = 'inline';
+      } else {
+        x.style.display = 'none';
+      }
+      if (y.style.display == 'none') {
+        y.style.display = 'inline';
+      } else {
+        y.style.display = 'none';
+      }
+    }
+
+    function ShowPhone() {
+      var x = document.getElementById('sphone');
+      var y = document.getElementById('hphone');
+      if (x.style.display == 'none') {
+        x.style.display = 'inline';
+      } else {
+        x.style.display = 'none';
+      }
+      if (y.style.display == 'none') {
+        y.style.display = 'inline';
+      } else {
+        y.style.display = 'none';
+      }
+    }
+
+    function HideEmail() {
+      var x = document.getElementById('email');
+      x.style.display = 'none';
+
+    }
+
+    function HidePhone() {
+      var x = document.getElementById('phone');
+      x.style.display = 'none';
     }
   </script>
 
