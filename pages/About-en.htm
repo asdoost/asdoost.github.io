@@ -71,16 +71,14 @@
   <div class="w3-main w3-padding-large" style="margin-left:30%">
 
     <!-- Menu icon to open sidebar -->
-    <span class="w3-button w3-top w3-white w3-xxlarge w3-text-blue-grey w3-hover-text-black" style="width:auto;right:0;"
-      onclick="openNav()"><i class="fa fa-bars"></i></span>
+    <span class="w3-button w3-top w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
+      onclick="openNav()"><i class="fa fa-bars"></i>
+    </span>
 
     <!-- Header -->
     <header class="w3-container w3-center" id="home">
-      <img src="imgs/MyPhoto.jpg" class="w3-image w3-hide-large w3-hide-small w3-round"
-        style="display:block;width:60%;margin:auto;">
-      <img src="imgs/MyPhoto.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
     </header>
-    <!-- End Projects Section -->
+    <!-- End Header Section -->
 
     <!-- About Section -->
     <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
@@ -112,7 +110,56 @@
     </div>
     <!-- End About Section -->
 
+    <div class="theme-container shadow-dark">
+      <img id="theme-icon" src="../icons/moon.svg" alt="ERR">
+    </div>
+
     <script>
+      document.body.style = "background-color: var(--bs-dark); color: var(--bs-light) ;transition: 0.5s;"
+      const sun = "../icons/sun.svg";
+      const moon = "../icons/moon.svg"
+
+      var theme = "dark";
+      const root = document.querySelector(":root");
+      const container = document.getElementsByClassName("theme-container")[0];
+      const themeIcon = document.getElementById("theme-icon");
+      container.addEventListener("click", setTheme);
+      function setTheme() {
+        switch (theme) {
+          case "dark":
+            setLight();
+            theme = "light";
+            break;
+          case "light":
+            setDark();
+            theme = "dark";
+            break;
+        }
+      }
+      function setLight() {
+        root.style.setProperty(
+          "--bs-dark",
+          "linear-gradient(318.32deg, #c3d1e4 0%, #dde7f3 55%, #d4e0ed 100%)"
+        );
+        container.classList.remove("shadow-dark");
+        setTimeout(() => {
+          container.classList.add("shadow-light");
+          themeIcon.classList.remove("change");
+        }, 300);
+        themeIcon.classList.add("change");
+        themeIcon.src = sun;
+      }
+      function setDark() {
+        root.style.setProperty("--bs-dark", "#212529");
+        container.classList.remove("shadow-light");
+        setTimeout(() => {
+          container.classList.add("shadow-dark");
+          themeIcon.classList.remove("change");
+        }, 300);
+        themeIcon.classList.add("change");
+        themeIcon.src = moon;
+      }
+
       // Open and close sidebar
       function openNav() {
         document.getElementById("mySidebar").style.width = "70%";
@@ -122,6 +169,7 @@
       function closeNav() {
         document.getElementById("mySidebar").style.display = "none";
       }
+
     </script>
 
 </body>

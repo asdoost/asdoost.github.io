@@ -2,29 +2,19 @@
 <html>
 
 <head>
-  <title>Abbas Safardoost - NoteBooks</title>
+  <title>Abbas Safardoost - Home</title>
   <meta charset="UTF-8">
+  <meta name="description" content="Abbas Safardoost's personal page">
+  <meta name="keywords" content="Abbas Safardoost, عباس صفردوست">
+  <meta name="author" content="Abbas Safardoost">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../files/w3.css">
   <link rel="stylesheet" href="../files/css.css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/8e177582ca.js" crossorigin="anonymous"></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+
   <style>
-    body {
-      font-family: "Montserrat", sans-serif
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    b {
-      font-family: "Monospace", "Montserrat", sans-serif
-    }
-
     .w3-row-padding img {
       margin-bottom: 12px
     }
@@ -54,16 +44,14 @@
       <i class="fa fa-remove"></i>
     </a>
     <div class="w3-bar-block w3-center">
-      <a href="../index.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-      <a href="Resume-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Resume</a>
-      <a href="Blog-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Blog</a>
-      <a href="Tutorial-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
-        onclick="closeNav()">Tutorials</a>
+      <a href="Home-fa.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">خانه</a>
+      <a href="Resume-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">رزومه</a>
+      <a href="Blog-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">بلاگ</a>
+      <a href="Tutorial-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">آموزش</a>
       <a href="NoteBooks-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
-        onclick="closeNav()">NoteBooks</a>
-      <a href="About-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
-      <a href="Contact-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
-        onclick="closeNav()">Contact</a>
+        onclick="closeNav()">نوت‌بوک</a>
+      <a href="About-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">درباره</a>
+      <a href="Contact-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">تماس</a>
     </div>
   </nav>
 
@@ -75,24 +63,55 @@
       onclick="openNav()"><i class="fa fa-bars"></i></span>
 
     <!-- Header -->
-    <header class="w3-container w3-center" id="home">
-      <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
-        <h2>NoteBooks</h2>
-        <hr style="border-color: #607d8b; border-width: 2px;">
+    <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+      <h1 class="w3-jumbo"><b>عباس صفردوست</b></h1>
+
+      <div class="w3-container">
+        <h5 class="w3-opacity">
+          <b>زبان-روان شناس، متخصص ان‌ال‌پی، مترجم</b>
+        </h5>
+
+        <p>
+          <a href="https://scholar.google.com/citations?user=sIJPorYAAAAJ&hl=en&oi=ao" style="text-decoration:none">
+            <iconify-icon icon="academicons:google-scholar"
+              class="fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey w3-hover-opacity"></iconify-icon>
+          </a>
+          <a href="https://www.orcid.org/0000-0003-1814-5550" style="text-decoration:none">
+            <iconify-icon icon="academicons:orcid"
+              class="fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey w3-hover-opacity"></iconify-icon>
+          </a>
+          <a href="https://www.researchgate.net/profile/Abbas-Safardoost" style="text-decoration:none">
+            <iconify-icon icon="academicons:researchgate-square"
+              class="fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey w3-hover-opacity"></iconify-icon>
+          </a>
+          <a href="https://github.com/asdoost" style="text-decoration:none">
+            <iconify-icon icon="akar-icons:github-fill"
+              class="fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey w3-hover-opacity"></iconify-icon>
+          </a>
+        </p>
       </div>
+      <!-- <img src="imgs/MyPhoto.jpg" class="w3-image w3-hide-large w3-hide-small w3-round"
+        style="display:block;width:60%;margin:auto;">
+      <img src="imgs/MyPhoto.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333"> -->
     </header>
-    <!-- End Projects Section -->
+    <!-- End Header Section -->
 
-    <!-- About Section -->
-
-    <!-- End About Section -->
+    <center>
+      <div class="switch">
+        <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" onclick="openurl()"
+          checked>
+        <label for="language-toggle"></label>
+        <span class="on">انگ</span>
+        <span class="off">فا</span>
+      </div>
+    </center>
 
     <div class="theme-container shadow-dark">
       <img id="theme-icon" src="../icons/moon.svg" alt="ERR">
     </div>
 
     <script>
-      document.body.style = "background-color: var(--bs-dark); color: var(--bs-light) ;transition: 0.5s;"
+      document.body.style = "background-color: var(--bs-dark); color: var(--bs-light);transition: 0.5s;"
       const sun = "../icons/sun.svg";
       const moon = "../icons/moon.svg"
 
@@ -101,6 +120,7 @@
       const container = document.getElementsByClassName("theme-container")[0];
       const themeIcon = document.getElementById("theme-icon");
       container.addEventListener("click", setTheme);
+      
       function setTheme() {
         switch (theme) {
           case "dark":
@@ -113,6 +133,7 @@
             break;
         }
       }
+
       function setLight() {
         root.style.setProperty(
           "--bs-dark",
@@ -126,6 +147,7 @@
         themeIcon.classList.add("change");
         themeIcon.src = sun;
       }
+
       function setDark() {
         root.style.setProperty("--bs-dark", "#212529");
         container.classList.remove("shadow-light");
@@ -147,6 +169,9 @@
         document.getElementById("mySidebar").style.display = "none";
       }
 
+      function openurl() {
+        window.open("../index.htm", "_self")
+      }
     </script>
 
 </body>
