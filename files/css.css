@@ -1,3 +1,13 @@
+/* Persian */
+@font-face {
+  font-family: 'Yekan';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/Yekan.eot');
+  src: url('../fonts/Yekan.woff') format('woff');
+  unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+10A60-10A7F, U+10A80-10A9F, U+1EE00-1EEFF;
+}
+
 /* cyrillic-ext */
 @font-face {
   font-family: 'Montserrat';
