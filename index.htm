@@ -14,104 +14,77 @@
   <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/8e177582ca.js" crossorigin="anonymous"></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
-  <!-- <style>
-    body {
-      font-family: "Montserrat", sans-serif
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    b {
-      font-family: "Monospace", "Montserrat", sans-serif
-    }
-
-    .w3-row-padding img {
-      margin-bottom: 12px
-    }
-
-    .bgimg {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url('imgs/MyPhoto.jpg');
-      min-height: 100%;
-    }
-  </style> -->
 </head>
 
 <body>
 
   <!-- Sidebar with image -->
-  <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:30%">
+  <nav class="css-sidebar css-hide-medium css-hide-small" style="width:30%">
     <div class="bgimg"></div>
   </nav>
 
   <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-  <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2"
+  <nav class="css-sidebar css-black css-animate-right css-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2"
     id="mySidebar">
-    <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright"
+    <a href="javascript:void(0)" onclick="closeNav()" class="css-button css-black css-xxxlarge css-display-topright"
       style="padding:0 12px;">
       <i class="fa fa-remove"></i>
     </a>
-    <div class="w3-bar-block w3-center">
-      <a href="index.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-      <a href="pages/Resume-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+    <div class="css-bar-block css-center">
+      <a href="index.htm" class="css-bar-item css-button css-text-grey css-hover-black" onclick="closeNav()">Home</a>
+      <a href="en/Resume-en.htm" class="css-bar-item css-button css-text-grey css-hover-black"
         onclick="closeNav()">Resume</a>
-      <a href="pages/Blog-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+      <a href="en/Blog-en.htm" class="css-bar-item css-button css-text-grey css-hover-black"
         onclick="closeNav()">Blog</a>
-      <a href="pages/Tutorial-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+      <a href="en/Tutorial-en.htm" class="css-bar-item css-button css-text-grey css-hover-black"
         onclick="closeNav()">Tutorials</a>
-      <a href="pages/NoteBooks-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+      <a href="en/NoteBooks-en.htm" class="css-bar-item css-button css-text-grey css-hover-black"
         onclick="closeNav()">NoteBooks</a>
-      <a href="pages/About-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+      <a href="en/About-en.htm" class="css-bar-item css-button css-text-grey css-hover-black"
         onclick="closeNav()">About</a>
-      <a href="pages/Contact-en.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+      <a href="en/Contact-en.htm" class="css-bar-item css-button css-text-grey css-hover-black"
         onclick="closeNav()">Contact</a>
     </div>
   </nav>
 
   <!-- Page Content -->
-  <div class="w3-main w3-padding-large" style="margin-left:30%">
+  <div class="css-main css-padding-large" style="margin-left:30%">
 
     <!-- Menu icon to open sidebar -->
-    <span class="w3-button w3-top w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
+    <span class="css-button css-top css-xxlarge css-text-grey css-hover-text-black" style="width:auto;right:0;"
       onclick="openNav()"><i class="fa fa-bars"></i></span>
 
     <!-- Header -->
-    <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-      <h1 class="w3-jumbo"><b>Abbas Safardoost</b></h1>
+    <header class="css-container css-center" style="padding:128px 16px" id="home">
+      <h1 class="css-jumbo"><b>Abbas Safardoost</b></h1>
 
-      <div class="w3-container">
-        <h5 class="w3-opacity">
+      <div class="css-container">
+        <h5 class="css-opacity">
           <b>Psycholinguist, NLP Engineers, Translator</b>
         </h5>
 
         <p>
           <a href="https://scholar.google.com/citations?user=sIJPorYAAAAJ&hl=en&oi=ao" style="text-decoration:none">
             <iconify-icon icon="academicons:google-scholar"
-              class="fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey w3-hover-opacity"></iconify-icon>
+              class="fa-fw css-margin-right css-xxlarge css-text-blue-grey css-hover-opacity"></iconify-icon>
           </a>
           <a href="https://www.orcid.org/0000-0003-1814-5550" style="text-decoration:none">
             <iconify-icon icon="academicons:orcid"
-              class="fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey w3-hover-opacity"></iconify-icon>
+              class="fa-fw css-margin-right css-xxlarge css-text-blue-grey css-hover-opacity"></iconify-icon>
           </a>
           <a href="https://www.researchgate.net/profile/Abbas-Safardoost" style="text-decoration:none">
             <iconify-icon icon="academicons:researchgate-square"
-              class="fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey w3-hover-opacity"></iconify-icon>
+              class="fa-fw css-margin-right css-xxlarge css-text-blue-grey css-hover-opacity"></iconify-icon>
           </a>
           <a href="https://github.com/asdoost" style="text-decoration:none">
             <iconify-icon icon="akar-icons:github-fill"
-              class="fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey w3-hover-opacity"></iconify-icon>
+              class="fa-fw css-margin-right css-xxlarge css-text-blue-grey css-hover-opacity"></iconify-icon>
           </a>
         </p>
       </div>
-      <!-- <img src="imgs/MyPhoto.jpg" class="w3-image w3-hide-large w3-hide-small w3-round"
+      <!-- <img src="imgs/MyPhoto.jpg" class="css-image css-hide-large css-hide-small css-round"
         style="display:block;width:60%;margin:auto;">
-      <img src="imgs/MyPhoto.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333"> -->
+      <img src="imgs/MyPhoto.jpg" class="css-image css-hide-large css-hide-medium css-round" width="1000" height="1333"> -->
     </header>
     <!-- End Header Section -->
 
@@ -185,7 +158,7 @@
       }
 
       function openurl() {
-        window.open("pages/Home-fa.htm", "_self")
+        window.open("fa/Home-fa.htm", "_self")
       }
     </script>
 
