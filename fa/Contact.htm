@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>عباس صفردوست - تماس</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="عباس صفردوست">
+  <meta name="google-site-verification" content="60C_DQqQ6UiCrVLrcnrVcjtn-iXVpsmK4L3YaS8598w" />
+  <link rel="stylesheet" type="text/css" href="../files/w3.css">
+  <link rel="stylesheet" type="text/css" href="../files/css.css?family=Montserrat">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/8e177582ca.js" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Sidebar with image -->
+  <nav class="css-sidebar css-hide-medium css-hide-small" style="width:30%">
+    <div class="bgimg"></div>
+  </nav>
+
+  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="css-sidebar css-black css-animate-right css-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="css-button css-black css-xxxlarge css-display-topright"
+      style="padding:0 12px;">
+      <i class="fa fa-remove"></i>
+    </a>
+   <div class="css-bar-block css-center">
+      <a href="Home.htm" class="css-bar-item css-button css-text-grey css-hover-black" 
+         onclick="closeNav()">خانه</a>
+      <a href="Resume.htm" class="css-bar-item css-button css-text-grey css-hover-black"
+        onclick="closeNav()">رزومه</a>
+      <a href="Blog.htm" class="css-bar-item css-button css-text-grey css-hover-black" 
+         onclick="closeNav()">بلاگ</a>
+      <a href="Tutorial.htm" class="css-bar-item css-button css-text-grey css-hover-black"
+        onclick="closeNav()">آموزش</a>
+      <a href="NoteBooks.htm" class="css-bar-item css-button css-text-grey css-hover-black"
+        onclick="closeNav()">نوت‌بوک</a>
+      <a href="About.htm" class="css-bar-item css-button css-text-grey css-hover-black"
+        onclick="closeNav()">درباره</a>
+      <a href="Contact.htm" class="css-bar-item css-button css-text-grey css-hover-black"
+        onclick="closeNav()">تماس</a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="css-main css-padding-large" style="margin-left:30%">
+
+    <!-- Menu icon to open sidebar -->
+    <span class="css-button css-top css-xxlarge css-text-grey css-hover-text-black" style="width:auto;right:0;"
+      onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+    <!-- Header -->
+    <header class="css-container css-center css-right2left" id="home">
+      <div class="css-content css-justify css-text-grey css-padding-32" id="about">
+        <h2>تماس</h2>
+        <hr style="border-color: #607d8b; border-width: 2px;">
+      </div>
+    </header>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <div class="css-padding-32 css-content css-text-blue-grey css-right2left" id="contact" style="margin-bottom:64px">
+
+      <div class="css-section">
+        <p><i class="fa fa-map-marker fa-fw css-xlarge css-margin-right css-text-blue-grey"></i> تهران، ایران</p>
+
+        <p>
+          <i class="fa fa-phone fa-fw css-xlarge css-margin-right css-text-blue-grey"></i> موبایل:
+          <?php _e('E-mail:', 'theme') ?>
+          <span onclick="ShowPhone()" id="sphone" style="display:inline">
+            <a href="#">
+              برای دیدن کلیک کنید
+            </a>
+          </span>
+          <span onclick="HidePhone()" id="hphone" style="display:none">
+            ۹۳۹۹ ۴۹۶ ۰۹۹۱
+          </span>
+        </p>
+
+        <p>
+          <i class="fa fa-envelope fa-fw css-xlarge css-margin-right css-text-blue-grey"></i> ایمیل:
+          <?php _e('E-mail:', 'theme') ?>
+          <span onclick="ShowEmail()" id="semail" style="display:inline">
+            <a href="##" style="display:inline">
+              برای دیدن کلیک کنید
+            </a>
+          </span>
+          <span onclick="HideEmail()" id="hemail" style="display:none">
+            a.safardoust@gmail.com
+          </span>
+        </p>
+
+        <br>
+
+        <p>
+          <i class="fas fa-link fa-fw css-xlarge css-margin-right css-text-blue-grey"> </i>
+          <a href="https://scholar.google.com/citations?user=sIJPorYAAAAJ&hl=en&oi=ao" style="text-decoration:none">
+            <iconify-icon icon="academicons:google-scholar"
+              class="fa-fw css-margin-right css-xlarge css-text-blue-grey css-hover-opacity"></iconify-icon>
+          </a>
+          <a href="https://www.orcid.org/0000-0003-1814-5550" style="text-decoration:none">
+            <iconify-icon icon="academicons:orcid"
+              class="fa-fw css-margin-right css-xlarge css-text-blue-grey css-hover-opacity"></iconify-icon>
+          </a>
+          <a href="https://www.researchgate.net/profile/Abbas-Safardoost" style="text-decoration:none">
+            <iconify-icon icon="academicons:researchgate-square"
+              class="fa-fw css-margin-right css-xlarge css-text-blue-grey css-hover-opacity"></iconify-icon>
+          </a>
+          <a href="https://github.com/asdoost" style="text-decoration:none">
+            <iconify-icon icon="akar-icons:github-fill"
+              class="fa-fw css-margin-right css-xlarge css-text-blue-grey css-hover-opacity"></iconify-icon>
+          </a>
+        </p>
+      </div>
+    </div>
+    <!-- End Contact Section -->
+
+    <!-- END PAGE CONTENT -->
+  </div>
+
+  <div class="theme-container shadow-dark">
+    <img id="theme-icon" src="../icons/moon.svg" alt="ERR">
+  </div>
+
+  <script>
+    document.body.style = "background-color: var(--bs-dark); color: var(--bs-light) ;transition: 0.5s;"
+    const sun = "../icons/sun.svg";
+    const moon = "../icons/moon.svg"
+
+    var theme = "dark";
+    const root = document.querySelector(":root");
+    const container = document.getElementsByClassName("theme-container")[0];
+    const themeIcon = document.getElementById("theme-icon");
+    container.addEventListener("click", setTheme);
+    function setTheme() {
+      switch (theme) {
+        case "dark":
+          setLight();
+          theme = "light";
+          break;
+        case "light":
+          setDark();
+          theme = "dark";
+          break;
+      }
+    }
+    function setLight() {
+      root.style.setProperty(
+        "--bs-dark",
+        "linear-gradient(318.32deg, #c3d1e4 0%, #dde7f3 55%, #d4e0ed 100%)"
+      );
+      container.classList.remove("shadow-dark");
+      setTimeout(() => {
+        container.classList.add("shadow-light");
+        themeIcon.classList.remove("change");
+      }, 300);
+      themeIcon.classList.add("change");
+      themeIcon.src = sun;
+    }
+    function setDark() {
+      root.style.setProperty("--bs-dark", "#212529");
+      container.classList.remove("shadow-light");
+      setTimeout(() => {
+        container.classList.add("shadow-dark");
+        themeIcon.classList.remove("change");
+      }, 300);
+      themeIcon.classList.add("change");
+      themeIcon.src = moon;
+    }
+
+    // Open and close sidebar
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "70%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+
+    function ShowEmail() {
+      var x = document.getElementById('semail');
+      var y = document.getElementById('hemail');
+      if (x.style.display == 'none') {
+        x.style.display = 'inline';
+      } else {
+        x.style.display = 'none';
+      }
+      if (y.style.display == 'none') {
+        y.style.display = 'inline';
+      } else {
+        y.style.display = 'none';
+      }
+    }
+
+    function ShowPhone() {
+      var x = document.getElementById('sphone');
+      var y = document.getElementById('hphone');
+      if (x.style.display == 'none') {
+        x.style.display = 'inline';
+      } else {
+        x.style.display = 'none';
+      }
+      if (y.style.display == 'none') {
+        y.style.display = 'inline';
+      } else {
+        y.style.display = 'none';
+      }
+    }
+
+    function HideEmail() {
+      var x = document.getElementById('email');
+      x.style.display = 'none';
+
+    }
+
+    function HidePhone() {
+      var x = document.getElementById('phone');
+      x.style.display = 'none';
+    }
+
+  </script>
+
+</body>
+
+</html>
