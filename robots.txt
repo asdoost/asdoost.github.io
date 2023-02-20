@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /en/Contact.htm
+
+Sitemap: https://asdoost.github.io/en/sitemap.xml
