@@ -1131,3 +1131,56 @@ li a:hover {
 .css-right2left {
   direction: rtl;
 }
+/* CSS for the accordion section */
+.accordion {
+  cursor: pointer;
+  background-color: inherit;
+  color: inherit;
+  padding: 18px;
+  padding-left: 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  transition: 0.4s;
+}
+
+.abstract-css{
+  padding-left: 20px;
+}
+
+/* CSS for the plus sign */
+.plus {
+  font: inherit;
+  float: right;
+  transition: 0.4s;
+  display: inline;
+}
+
+/* CSS for the multiplication sign */
+.multiply {
+  font: inherit;
+  float: right;
+  transition: 0.4s;
+  display: none;
+}
+
+/* CSS for the panel */
+.panel {
+  display: none;
+  overflow: hidden;
+  padding: 0 18px;
+}
+
+/* CSS to show panel content when accordion is active */
+.active + .panel {
+  display: block;
+}
+
+/* CSS to hide plus sign and show multiplication sign when accordion is active */
+.active + .panel .plus {
+  display: none;
+}
+
+.active + .panel .multiply {
+  display: inline;
+}
