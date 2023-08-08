@@ -203,10 +203,10 @@
           <br>
         </h6>
         <button class="accordion">
-          <span class="fa fa-plus plus">
+          <span class="fa fa-plus plus-en">
             <b class="css-opacity">Abstract (click to expand)</b>
           </span>
-          <span class="fa fa-times multiply" style="display: none;">
+          <span class="fa fa-times multiply-en" style="display: none;">
             <b class="css-opacity">Abstract (click to collapse)</b>
           </span>
         </button>
@@ -1217,8 +1217,8 @@
     accordions.forEach(function (accordion) {
       accordion.addEventListener('click', function () {
         this.classList.toggle('active');
-        var plusSign = this.querySelector('.plus');
-        var multiplySign = this.querySelector('.multiply');
+        var plusSign = this.querySelector('.plus-en');
+        var multiplySign = this.querySelector('.multiply-en');
 
         if (plusSign.style.display === 'none') {
           plusSign.style.display = 'inline';

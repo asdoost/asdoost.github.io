@@ -258,10 +258,10 @@
           </b>
         </h6>
         <button class="accordion">
-          <span class="fa fa-plus plus">
+          <span class="fa fa-plus plus-fa">
             <b class="css-opacity">چکیده (برای دیدن کلیک کنید)</b>
           </span>
-          <span class="fa fa-times multiply" style="display: none;">
+          <span class="fa fa-times multiply-fa" style="display: none;">
             <b class="css-opacity">چکیده (برای پنهان کردن کلیک کنید)</b>
           </span>
         </button>
@@ -1232,8 +1232,8 @@
     accordions.forEach(function (accordion) {
       accordion.addEventListener('click', function () {
         this.classList.toggle('active');
-        var plusSign = this.querySelector('.plus');
-        var multiplySign = this.querySelector('.multiply');
+        var plusSign = this.querySelector('.plus-fa');
+        var multiplySign = this.querySelector('.multiply-fa');
 
         if (plusSign.style.display === 'none') {
           plusSign.style.display = 'inline';

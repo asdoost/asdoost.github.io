@@ -1149,7 +1149,23 @@ li a:hover {
 }
 
 /* CSS for the plus sign */
-.plus {
+.plus-en {
+  font: inherit;
+  float: left;
+  transition: 0.4s;
+  display: inline;
+}
+
+/* CSS for the multiplication sign */
+.multiply-en {
+  font: inherit;
+  float: left;
+  transition: 0.4s;
+  display: none;
+}
+
+/* CSS for the plus sign */
+.plus-fa {
   font: inherit;
   float: right;
   transition: 0.4s;
@@ -1157,7 +1173,7 @@ li a:hover {
 }
 
 /* CSS for the multiplication sign */
-.multiply {
+.multiply-fa {
   font: inherit;
   float: right;
   transition: 0.4s;
@@ -1177,10 +1193,18 @@ li a:hover {
 }
 
 /* CSS to hide plus sign and show multiplication sign when accordion is active */
-.active + .panel .plus {
+.active + .panel .plus-en {
   display: none;
 }
 
-.active + .panel .multiply {
+.active + .panel .multiply-en {
+  display: inline;
+}
+
+.active + .panel .plus-fa {
+  display: none;
+}
+
+.active + .panel .multiply-fa {
   display: inline;
 }
