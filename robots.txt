@@ -1,4 +1,5 @@
 User-agent: *
-Allow: /en/Contact.htm
-
-Sitemap: https://asdoost.github.io/en/sitemap.xml
+Disallow: assets/en/resume.html
+Disallow: assets/fa/resume.html
+Disallow: assets/en/gallery.html
+Disallow: assets/fa/gallery.html

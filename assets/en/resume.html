@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Resume</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link type="text/css" rel="stylesheet" href="../css/global.css">
+    <link type="text/css" rel="stylesheet" href="../css/resume.css">
+</head>
+
+<body>
+    <!-- 1. Menu Button -->
+    <button class="floating-btn" type="button" id="sidebar-toggler" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="material-symbols-outlined fs-2">menu</span>
+    </button>
+
+    <!-- 2. Sidebar -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header pb-0">
+            <h5 class="offcanvas-title visually-hidden" id="offcanvasNavbarLabel">Menu</h5>
+        </div>
+        <div class="offcanvas-body d-flex flex-column h-100 mt-5">
+            <nav aria-label="Primary navigation">
+                <a class="nav-link-custom" href="../../index.html">
+                    <span class="nav-icon material-symbols-outlined" aria-hidden="true">home</span>
+                    Home
+                </a>
+                <a class="nav-link-custom" href="../en/resume.html">
+                    <span class="nav-icon material-symbols-outlined" aria-hidden="true">description</span>
+                    Resume
+                </a>
+                <a class="nav-link-custom" href="../en/blog.html">
+                    <span class="nav-icon material-symbols-outlined" aria-hidden="true">article</span>
+                    Blog
+                </a>
+                <a class="nav-link-custom" href="../en/gallery.html">
+                    <span class="nav-icon material-symbols-outlined" aria-hidden="true">photo_library</span>
+                    Gallery
+                </a>
+            </nav>
+            <div class="togglers mt-auto">
+                <div class="theme-wrapper">
+                    <label for="theme" class="theme">
+                        <span>Light</span>
+                        <span class="theme__toggle-wrap">
+                            <input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme"
+                                value="dark">
+                            <span class="theme__icon">
+                                <span class="theme__icon-part"></span><span class="theme__icon-part"></span><span
+                                    class="theme__icon-part"></span>
+                                <span class="theme__icon-part"></span><span class="theme__icon-part"></span><span
+                                    class="theme__icon-part"></span>
+                                <span class="theme__icon-part"></span><span class="theme__icon-part"></span><span
+                                    class="theme__icon-part"></span>
+                            </span>
+                        </span>
+                        <span>Dark</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dynamic Page Content Area -->
+    <main class="page-content-wrapper">
+        <div class="container py-4 py-lg-5">
+
+            <!-- Resume Header -->
+            <div class="resume-header text-center">
+                <h1 class="display-5 fw-bold mb-2">
+                    My Resume
+                </h1>
+            </div>
+
+            <!-- Tab Navigation -->
+            <div class="tab-nav-wrapper mb-4">
+                <ul class="nav nav-pills resume-tabs justify-content-center flex-nowrap" id="resumeTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="tab-work" data-bs-toggle="pill" data-bs-target="#pane-work"
+                            type="button" role="tab">
+                            <i class="fas fa-briefcase me-2"></i>
+                            <span class="tab-text">Experience</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab-education" data-bs-toggle="pill"
+                            data-bs-target="#pane-education" type="button" role="tab">
+                            <i class="fas fa-graduation-cap me-2"></i>
+                            <span class="tab-text">Education</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab-publication" data-bs-toggle="pill"
+                            data-bs-target="#pane-publication" type="button" role="tab">
+                            <i class="fas fa-book me-2"></i>
+                            <span class="tab-text">Publications</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab-projects" data-bs-toggle="pill" data-bs-target="#pane-projects"
+                            type="button" role="tab">
+                            <i class="fas fa-code me-2"></i>
+                            <span class="tab-text">Projects</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab-certificates" data-bs-toggle="pill"
+                            data-bs-target="#pane-certificates" type="button" role="tab">
+                            <i class="fas fa-certificate me-2"></i>
+                            <span class="tab-text">Certificates</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="resumeTabsContent">
+
+                <!-- Work Experience -->
+                <div class="tab-pane fade show active" id="pane-work" role="tabpanel" tabindex="0">
+                    <div class="content-card">
+                        <div class="section-header">
+                            <h2 class="section-title">
+                                <i class="fas fa-briefcase text-primary me-3"></i>
+                                <span class="tab-text">Work Experience</span>
+                            </h2>
+                        </div>
+
+                        <div class="timeline">
+                            <!-- Timeline Item 1 -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker current"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4 class="timeline-title">
+                                            Language Instructor
+                                        </h4>
+                                        <span class="badge bg-success">Current</span>
+                                    </div>
+                                    <div class="timeline-meta">
+                                        <i class="fas fa-calendar-alt me-1"></i>2025 - Present
+                                    </div>
+                                    <p class="timeline-description">
+                                        <span>Teaching language courses and developing curriculum
+                                            materials.</span>
+                                    </p>
+                                    <div class="timeline-tags">
+                                        <span class="tag">Teaching</span>
+                                        <span class="tag">Curriculum Design</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Timeline Item 2 -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker current"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4 class="timeline-title">
+                                            Freelance Translator & Researcher
+                                        </h4>
+
+                                        <span class="badge bg-success">Current</span>
+                                    </div>
+                                    <div class="timeline-meta">
+                                        <i class="fas fa-calendar-alt me-1"></i>2015 - Present
+                                    </div>
+                                    <p class="timeline-description">
+                                        Professional translation services and academic research in linguistics.
+                                    </p>
+                                    <div class="timeline-tags">
+                                        <span class="tag">Translation</span>
+                                        <span class="tag">Research</span>
+                                        <span class="tag">Linguistics</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Timeline Item 3 -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4 class="timeline-title">
+                                            Language Instructor
+                                        </h4>
+                                    </div>
+                                    <div class="timeline-meta">
+                                        <i class="fas fa-calendar-alt me-1"></i>Sep 2024 - Nov 2024
+                                    </div>
+                                    <p class="timeline-description">
+                                        Teaching language courses and developing curriculum materials.
+                                    </p>
+                                    <div class="timeline-tags">
+                                        <span class="tag">Teaching</span>
+                                        <span class="tag">Curriculum Design</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Timeline Item 4 -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4 class="timeline-title">
+                                            Lexicographer
+                                        </h4>
+                                    </div>
+                                    <div class="timeline-meta">
+                                        <i class="fas fa-calendar-alt me-1"></i>2013 - 2015
+                                    </div>
+                                    <p class="timeline-description">
+                                        Contributed to comprehensive Persian dictionary projects.
+                                    </p>
+                                    <div class="timeline-tags">
+                                        <span class="tag">Lexicography</span>
+                                        <span class="tag">Dictionary</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Timeline Item 5 -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4 class="timeline-title">
+                                            Copy Writer
+                                        </h4>
+                                    </div>
+                                    <div class="timeline-meta">
+                                        <i class="fas fa-calendar-alt me-1"></i>2010 - 2013
+                                    </div>
+                                    <p class="timeline-description">
+                                        Created compelling content for various media and publications.
+                                    </p>
+                                    <div class="timeline-tags">
+                                        <span class="tag">Writing</span>
+                                        <span class="tag">Content Creation</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="tab-pane fade" id="pane-education" role="tabpanel" tabindex="0">
+                    <div class="content-card">
+                        <div class="section-header">
+                            <h2 class="section-title">
+                                <i class="fas fa-graduation-cap text-primary me-3"></i>
+                                Education
+                            </h2>
+                        </div>
+
+                        <div class="timeline education-timeline">
+                            <!-- PhD -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker education-marker phd"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4 class="timeline-title">
+                                            Ph.D in Linguistics
+                                        </h4>
+                                        <span class="badge bg-primary">Doctorate</span>
+                                    </div>
+                                    <div class="timeline-institution">
+                                        <i class="fas fa-university me-2"></i>
+                                        Tarbiat Modares University
+                                    </div>
+                                    <div class="timeline-meta">
+                                        <i class="fas fa-calendar-alt me-1"></i>Sep 2019 - May 2025
+                                    </div>
+                                    <div class="thesis-card">
+                                        <h6><i class="fas fa-scroll me-2"></i>
+                                            Thesis
+                                        </h6>
+                                        <p class="thesis-title">
+                                            Facing Persian in the Wild: Corpus Compilation,
+                                            Annotation, Tag Encoding, and Processing of Digital Writing Register
+                                        </p>
+                                        <button class="btn btn-sm btn-outline-primary" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#abstract1">
+                                            <i class="fas fa-chevron-down me-1"></i>
+                                            View Abstract
+                                        </button>
+                                        <div class="collapse mt-3" id="abstract1">
+                                            <div class="abstract-content">
+                                                <p>
+                                                    The proliferation of digital communication technologies has
+                                                    profoundly reshaped linguistic landscapes, giving rise to a
+                                                    distinct digital writing register that now constitutes a
+                                                    substantial component of daily interaction. Unlike traditional
+                                                    written registers governed by established prescriptive norms,
+                                                    the emergent register is characterized by a lack of central
+                                                    regulatory authority, positioning it as a 'wild' register within
+                                                    linguistic inquiry. This characteristic necessitates a critical
+                                                    re-evaluation of conventional methodologies for linguistic
+                                                    analysis and processing. This study proposes and applies a novel
+                                                    methodological framework designed specifically for engaging with
+                                                    this complex linguistic register. We revisit the processes of
+                                                    corpus compilation, preprocessing, encoding, and annotation,
+                                                    aiming to streamline fundamental processing tasks while
+                                                    rigorously preserving the inherent linguistic and orthographic
+                                                    diversity characteristic of digital writing. The proposed
+                                                    approach deliberately maintains variations during initial
+                                                    preprocessing stages, deferring the crucial task of word
+                                                    identity disambiguation to subsequent, more context-aware
+                                                    processing steps. Our methodology commenced with the extraction
+                                                    of a large-scale corpus, designated '1400', comprising one
+                                                    million random tweets sourced from the Persian calendar year
+                                                    1400. A one-million- token sub-corpus was subsequently isolated
+                                                    to serve as the focus for detailed preprocessing, part-
+                                                    of-speech tagging, and lemmatization. During the normalization
+                                                    and tokenization phases, we implemented two primary strategies
+                                                    to enhance processing simplicity: the systematic removal of
+                                                    elements that introduce conventional orthographic variation
+                                                    (such as the zero-width non-joiner) and the strategic
+                                                    segmentation of multi-component elements possessing independent
+                                                    grammatical identities. For corpus annotation, we introduce
+                                                    'Tagframe', a novel and flexible framework for tag encoding. The
+                                                    framework is engineered to facilitate the granular
+                                                    representation of linguistic, paralinguistic, and intra-lexical
+                                                    information (such as clitic structures). Leveraging Tagframe, we
+                                                    developed a standardized tagframe specifically tailored for
+                                                    Persian digital text. This involved a necessary revision of
+                                                    certain traditional grammatical concepts and the inclusion of
+                                                    new categories and layered features representing linguistic,
+                                                    internal structure, and paralinguistic characteristics.
+                                                    Lemmatization was performed utilizing diacritization to resolve
+                                                    homographic ambiguity. The final corpus annotation employed 25
+                                                    linguistic categories supplemented by 82 linguistic features
+                                                    across three distinct layers: linguistic, intra-lexical, and
+                                                    paralinguistic. Statistical analysis of the annotated corpus,
+                                                    including comparison with other corpora, revealed a notably high
+                                                    frequency of hapax legomena, indicative of the corpus's rich
+                                                    diversity, and a high frequency of verbs, suggesting shared
+                                                    contextual characteristics with spoken language registers. The
+                                                    comprehensive methodology and the resulting annotated corpus
+                                                    presented herein establish a foundational resource and a
+                                                    replicable workflow that can significantly facilitate the
+                                                    creation and processing of similar corpora, thereby enabling
+                                                    further linguistic and computational investigations into this
+                                                    and related language registers.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Masters -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker education-marker masters"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4 class="timeline-title">
+                                            Master's Degree in Linguistics
+                                        </h4>
+                                        <span class="badge bg-info">
+                                            Master's
+                                        </span>
+                                    </div>
+                                    <div class="timeline-institution">
+                                        <i class="fas fa-university me-2"></i>
+                                        Tarbiat Modares University
+                                    </div>
+                                    <div class="timeline-meta">
+                                        <i class="fas fa-calendar-alt me-1"></i>Sep 2013 - Jun 2016
+                                    </div>
+                                    <div class="thesis-card">
+                                        <h6><i class="fas fa-scroll me-2"></i>
+                                            Thesis
+                                        </h6>
+                                        <p class="thesis-title">
+                                            Inflection of Tense in Persian Verbs and How It Is
+                                            Processed: A Psycholinguistics Perspective
+                                        </p>
+                                        <button class="btn btn-sm btn-outline-primary" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#abstract2">
+                                            <i class="fas fa-chevron-down me-1"></i>
+                                            View Abstract
+                                        </button>
+                                        <div class="collapse mt-3" id="abstract2">
+                                            <div class="abstract-content">
+                                                <p>
+                                                    In this research, we studied the Persian inflectional tense
+                                                    forms and how they are processed. Since historical studies are
+                                                    dominant in the study of language in Persian, we dedicated the
+                                                    first two questions of this research to revise some of the
+                                                    concepts in the area. In the first question, we asked about the
+                                                    categorization of Persian verbs based on the concept of
+                                                    regularity. The results showed that there are three categories
+                                                    in Persian verbs: regular, irregular, and alternative. Regulars
+                                                    are an open category in which their past tenses are produced by
+                                                    adding the regular suffix (: -id) to root and don’t belong to
+                                                    the other categories. Irregulars are a close category which
+                                                    there are no systematic relation between their roots and past
+                                                    tense forms, and they are represented as a list of connected
+                                                    pairs; alternatives, which are a kind of regular verb, are an
+                                                    open category which doesn’t belong to irregulars, their roots
+                                                    consist of more than two syllables, end with -ɑn, and they use
+                                                    -d and -id suffixes to produce their past tense forms. In the
+                                                    second question, we asked about the model which represents the
+                                                    process of tense inflection. The results showed that the present
+                                                    tense of regulars and irregulars, in addition to the past tense
+                                                    of most of the regulars, are produced by retrieving the root and
+                                                    adding proper affixes. On the other hand, the past tense of
+                                                    irregulars and some of the high-frequency regulars are produced
+                                                    by retrieving the past stem from memory. In the third question
+                                                    of this research, we asked about the mental mechanisms that are
+                                                    involved in producing Persian verbs. Steven Pinker claims that
+                                                    the distinction between regulars and irregulars roots in two
+                                                    distinct mechanisms in which rule mechanism involves in
+                                                    producing the regulars and rote mechanism involves in producing
+                                                    irregulars. The results of this research confirm Pinker's claim.
+                                                    To examine these three questions we used a wide range of
+                                                    evidence, but the main source of the evidence came from an
+                                                    experiment in which we presented participants by the present
+                                                    tense of verbs and asked them to produce the past tense of these
+                                                    verbs as fast as possible. Then we gathered the errors that they
+                                                    made and used them as a source for our purposes.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bachelors -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker education-marker bachelors"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4 class="timeline-title">
+                                            Bachelor's Degree in Linguistics
+                                        </h4>
+                                        <span class="badge bg-secondary">
+                                            Bachelor's
+                                        </span>
+                                    </div>
+                                    <div class="timeline-institution">
+                                        <i class="fas fa-university me-2"></i>
+                                        Shiraz University
+                                    </div>
+                                    <div class="timeline-meta">
+                                        <i class="fas fa-calendar-alt me-1"></i>Sep 2009 - Jun 2013
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publications -->
+                <div class="tab-pane fade" id="pane-publication" role="tabpanel" tabindex="0">
+                    <div class="content-card">
+                        <div class="section-header">
+                            <h2 class="section-title">
+                                <i class="fas fa-book text-primary me-3"></i>
+                                Publications
+                            </h2>
+                        </div>
+
+                        <!-- Journal Articles -->
+                        <div class="publication-section">
+                            <h3 class="subsection-title">
+                                <span class="subsection-icon"><i class="fas fa-file-alt"></i></span>
+                                Journal Articles
+                            </h3>
+
+                            <div class="publication-grid">
+
+                                <!-- Publication Card 1 -->
+                                <div class="publication-card">
+                                    <div class="publication-year">
+                                        2024
+                                    </div>
+                                    <div class="publication-body">
+                                        <h5 class="publication-title">
+                                            <a href="https://rjhll.basu.ac.ir/article_5558.html?lang=en">
+                                                The Category and Structure of Persian Numerals
+                                            </a>
+                                        </h5>
+                                        <p class="publication-journal">
+                                            <i class="fas fa-journal-whills me-2"></i>
+                                            Iranian Journal of Comparative Linguistic Research
+                                        </p>
+                                        <div class="publication-doi">
+                                            <i class="fas fa-link me-2"></i>
+                                            <a
+                                                href="https://rjhll.basu.ac.ir/article_5558.html?lang=en">10.22084/rjhll.2024.28776.2303</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Publication Card 2 -->
+                                <div class="publication-card">
+                                    <div class="publication-year">
+                                        2022
+                                    </div>
+                                    <div class="publication-body">
+                                        <h5 class="publication-title">
+                                            <a href="https://rjhll.basu.ac.ir/article_5098.html?lang=en">
+                                                Words and Rules theory vs. Generative Phonology: A Study of the Past
+                                                Tense Inflection of Persian Verbs
+                                            </a>
+                                        </h5>
+                                        <p class="publication-journal">
+                                            <i class="fas fa-journal-whills me-2"></i>
+                                            Iranian Journal of Comparative Linguistic Research
+                                        </p>
+                                        <div class="publication-doi">
+                                            <i class="fas fa-link me-2"></i>
+                                            <a
+                                                href="https://rjhll.basu.ac.ir/article_5098.html?lang=en">10.22084/rjhll.2022.26069.2209</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Publication Card 3 -->
+                                <div class="publication-card">
+                                    <div class="publication-year">
+                                        2020
+                                    </div>
+                                    <div class="publication-body">
+                                        <h5 class="publication-title">
+                                            <a href="https://ls.atu.ac.ir/article_13334.html?lang=en">
+                                                Distribution of Nasals in Consonant Clusters; and the
+                                                Distributional-phonological Characteristics of Loanwords in Persian
+                                            </a>
+                                        </h5>
+                                        <p class="publication-journal">
+                                            <i class="fas fa-journal-whills me-2"></i>
+                                            Language Science
+                                        </p>
+                                        <div class="publication-doi">
+                                            <i class="fas fa-link me-2"></i>
+                                            <a
+                                                href="https://doi.org/10.22054/ls.2019.36693.1139">10.22054/ls.2019.36693.1139</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Encyclopedia Entries -->
+                        <div class="publication-section">
+                            <h3 class="subsection-title">
+                                <span class="subsection-icon"><i class="fas fa-book-open"></i></span>
+                                Encyclopedia Entries
+                            </h3>
+
+                            <div class="publication-card horizontal">
+                                <div class="publication-year">
+                                    2018
+                                </div>
+                                <div class="publication-body">
+                                    <h5 class="publication-title">
+                                        Encyclopedia of Persian Language and Literature (vol. VI)
+                                    </h5>
+                                    <p class="publication-meta">
+                                        <span><i class="fas fa-user me-1"></i>
+                                            Vafa Zavvarei
+                                    </p>
+                                    <p class="publication-meta">
+                                        <span><i class="fas fa-building me-1"></i>
+                                            Academy of Persian Literature and Language Press
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dictionaries -->
+                        <div class="publication-section">
+                            <h3 class="subsection-title">
+                                <span class="subsection-icon"><i class="fas fa-spell-check"></i></span>
+                                Dictionaries
+                            </h3>
+
+                            <div class="publication-card horizontal">
+                                <div class="publication-year">
+                                    2017
+                                </div>
+                                <div class="publication-body">
+                                    <h5 class="publication-title">
+                                        The Comprehensive Dictionary of Persian Language (vol. II)
+                                    </h5>
+                                    <p class="publication-meta">
+                                        <span><i class="fas fa-building me-1"></i>
+                                            Academy of Persian Literature and Language Press
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects -->
+                <div class="tab-pane fade" id="pane-projects" role="tabpanel" tabindex="0">
+                    <div class="content-card">
+                        <div class="section-header">
+                            <h2 class="section-title">
+                                <i class="fas fa-code text-primary me-3"></i>
+                                Projects
+                            </h2>
+                        </div>
+
+                        <div class="projects-grid">
+
+                            <!-- Project Card 1 -->
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <div class="project-icon">
+                                        <i class="fas fa-microscope"></i>
+                                    </div>
+                                    <h4 class="project-title">
+                                        CorpusLab
+                                    </h4>
+                                    <span class="project-status active">Active</span>
+                                </div>
+                                <p class="project-description">
+                                    CorpusLab is an online tool for statistical analysis of Persian corpora.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Corpus</span>
+                                    <span class="tag">NLP</span>
+                                    <span class="tag">Persian</span>
+                                </div>
+                                <div class="project-links">
+                                    <p class="project-link">
+                                        <i class="fas fa-external-link-alt me-1"></i>
+                                        coming soon ...
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Project Card 2 -->
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <div class="project-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <h4 class="project-title">
+                                        PT1400
+                                    </h4>
+                                </div>
+                                <p class="project-description">
+                                    A corpus containing one million Persian tweets from 1400 (Shamsi Hijri
+                                    calendar).
+                                    Includes 50,000 manually normalized, tagged, and lemmatized tweets using the
+                                    innovative <em>Tagframe</em> encoding method.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Corpus</span>
+                                    <span class="tag">NLP</span>
+                                    <span class="tag">Persian</span>
+                                </div>
+                            </div>
+
+                            <!-- Project Card 3 -->
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <div class="project-icon">
+                                        <i class="fas fa-brain"></i>
+                                    </div>
+                                    <h4 class="project-title">
+                                        Psycholinguistic Study of Verb Inflection
+                                    </h4>
+                                </div>
+                                <p class="project-description">
+                                    Studying how regular and irregular verbs are produced and perceived, examining
+                                    rule and rote mechanisms in verb inflection processing.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Psycholinguistics</span>
+                                    <span class="tag">Morphology</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://rjhll.basu.ac.ir/article_5098.html?lang=en" class="project-link">
+                                        <i class="fas fa-external-link-alt me-1"></i>Related Publication
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Project Card 4 -->
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <div class="project-icon">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                    <h4 class="project-title">
+                                        CPVI
+                                    </h4>
+                                </div>
+                                <p class="project-description">
+                                    Comprehensive Persian Verb Inflector using Dual Mechanism theory (Words & Rules
+                                    theory) to inflect Persian verbs.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">NLP Tool</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/asdoost/CPVI" class="project-link">
+                                        <i class="fab fa-github me-1"></i>View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Project Card 5 -->
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <div class="project-icon">
+                                        <i class="fas fa-wave-square"></i>
+                                    </div>
+                                    <h4 class="project-title">
+                                        Phonotactics & Syllabification
+                                    </h4>
+                                </div>
+                                <p class="project-description">
+                                    Comprehensive study of phonotactics, phonostatistics, and syllabification of
+                                    approximately 55,000 Persian words.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Phonology</span>
+                                    <span class="tag">Analysis</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://ls.atu.ac.ir/article_13334.html?lang=en" class="project-link">
+                                        <i class="fas fa-external-link-alt me-1"></i>Related Publication
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Project Card 6 -->
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <div class="project-icon">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                    <h4 class="project-title">
+                                        Enhanced Flexicon
+                                    </h4>
+                                </div>
+                                <p class="project-description">
+                                    Enhanced version of Flexicon corpus with IPA transcription, syllabification,
+                                    initial
+                                    glottal additions, and various improvements.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Corpus</span>
+                                    <span class="tag">Lexicon</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/asdoost/Enhanced_Flexicon" class="project-link">
+                                        <i class="fab fa-github me-1"></i>
+                                        View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificates -->
+                <div class="tab-pane fade" id="pane-certificates" role="tabpanel" tabindex="0">
+                    <div class="content-card">
+                        <div class="section-header">
+                            <h2 class="section-title">
+                                <i class="fas fa-certificate text-primary me-3"></i>
+                                Certificates
+                            </h2>
+                            <p class="section-subtitle">
+                                Click on each category to expand
+                            </p>
+                        </div>
+
+                        <div class="accordion certificates-accordion" id="certificatesAccordion">
+
+                            <!-- ML & NLP Section -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseMLNLP" aria-expanded="true">
+                                        <span class="category-icon"><i class="fas fa-robot"></i></span>
+                                        <span class="category-title">ML & NLP</span>
+                                        <span class="badge bg-primary rounded-pill ms-auto me-3">15</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseMLNLP" class="accordion-collapse collapse"
+                                    data-bs-parent="#certificatesAccordion">
+                                    <div class="accordion-body">
+                                        <div class="certificate-list">
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Introduction to TensorFlow for AI, ML, and Deep Learning</h6>
+                                                    <span class="cert-issuer">DeepLearning.AI</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/K6Y4HLM8EWTS"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Natural Language Processing in TensorFlow</h6>
+                                                    <span class="cert-issuer">DeepLearning.AI</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/L95YZVA24QBJ"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>NLP with Classification and Vector Spaces</h6>
+                                                    <span class="cert-issuer">DeepLearning.AI</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/certificate/39PT7EBFHUPK"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Fine Tune BERT for Text Classification</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/certificate/9AWKHCK5HBV3"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Introduction to NLP in Python</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/84KDYLAJ9C29"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Transfer Learning for NLP with TensorFlow Hub</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/2HCG8GAM48SK"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Named Entity Recognition using LSTMs with Keras</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/F5NBURAA7BFC"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Fake News Detection with Machine Learning</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/E985AAGH9FWZ"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Convolutions for Text Classification with Keras</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/EGSM7HZX9JBM"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Tweet Emotion Recognition with TensorFlow</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/S32NY3M76AFS"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>NLP: Twitter Sentiment Analysis</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/NBTAPAJBH5ZE"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Basic Sentiment Analysis with TensorFlow</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/5F3TDXZU69DJ"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>The Data Scientist's Toolbox</h6>
+                                                    <span class="cert-issuer">Johns Hopkins University</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/T9VVDG3LYA89"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Programming Section -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseProgramming">
+                                        <span class="category-icon"><i class="fas fa-code"></i></span>
+                                        <span class="category-title">Programming</span>
+                                        <span class="badge bg-success rounded-pill ms-auto me-3">13</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseProgramming" class="accordion-collapse collapse"
+                                    data-bs-parent="#certificatesAccordion">
+                                    <div class="accordion-body">
+                                        <div class="certificate-list">
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Introduction to Git and GitHub</h6>
+                                                    <span class="cert-issuer">Google</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/QXC4S4SUSJVX"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Crash Course on Python</h6>
+                                                    <span class="cert-issuer">Google</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/TY2SKCFHLWRL"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Troubleshooting and Debugging Techniques</h6>
+                                                    <span class="cert-issuer">Google</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/SMK6EJC3NKMW"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Using Python to Interact with the Operating System</h6>
+                                                    <span class="cert-issuer">Google</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/9F2RU7Y8EUWZ"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item highlight">
+                                                <div class="cert-info">
+                                                    <h6>Python for Everybody (Specialization)</h6>
+                                                    <span class="cert-issuer">University of Michigan</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/specialization/G9Y6UZHB7MVK"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item highlight">
+                                                <div class="cert-info">
+                                                    <h6>Python 3 Programming (Specialization)</h6>
+                                                    <span class="cert-issuer">University of Michigan</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/specialization/7LW7W2L6T5HC"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Introduction to HTML5</h6>
+                                                    <span class="cert-issuer">University of Michigan</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/specialization/XVRPLQCGRHM7"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Introduction to CSS3</h6>
+                                                    <span class="cert-issuer">University of Michigan</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/specialization/FWXCD8UREFVY"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Introduction to Bash Shell Scripting</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/MGZUSQ524G2K"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Automation Scripts Using Bash</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/2PFRXWCYY7YD"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Statistics Section -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseStats">
+                                        <span class="category-icon"><i class="fas fa-chart-bar"></i></span>
+                                        <span class="category-title">Statistics</span>
+                                        <span class="badge bg-warning text-dark rounded-pill ms-auto me-3">3</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseStats" class="accordion-collapse collapse"
+                                    data-bs-parent="#certificatesAccordion">
+                                    <div class="accordion-body">
+                                        <div class="certificate-list">
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Basic Statistics</h6>
+                                                    <span class="cert-issuer">University of Amsterdam</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/YMC6JZQFBTPG"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Quantitative Methods</h6>
+                                                    <span class="cert-issuer">University of Amsterdam</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/DFLY7NQ2TLKW"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Data Science Math Skills</h6>
+                                                    <span class="cert-issuer">Duke University</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/KDFY8FU862S7"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Linguistics & Psychology Section -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseLingPsych">
+                                        <span class="category-icon"><i class="fas fa-brain"></i></span>
+                                        <span class="category-title">Linguistics & Psychology</span>
+                                        <span class="badge bg-info rounded-pill ms-auto me-3">5</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseLingPsych" class="accordion-collapse collapse"
+                                    data-bs-parent="#certificatesAccordion">
+                                    <div class="accordion-body">
+                                        <div class="certificate-list">
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>The Bilingual Brain</h6>
+                                                    <span class="cert-issuer">University of Houston</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/GNWHC4YT5U3B"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Fundamental Neuroscience for Neuroimaging</h6>
+                                                    <span class="cert-issuer">Johns Hopkins University</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/DUKZ5M7CM6G9"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Introduction to Psychology</h6>
+                                                    <span class="cert-issuer">University of Toronto</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/BYGC3ETHDDW6"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Big Data and Language 1</h6>
+                                                    <span class="cert-issuer">KAIST</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/HNHFREK7VJ6T"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Philosophy of Cognitive Sciences</h6>
+                                                    <span class="cert-issuer">University of Edinburgh</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/WAQRB9MGC9LQ"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-0 opacity-75">
+                &copy; 2025. <strong>All tokens reserved.</strong> No unauthorized lemmatization.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/global.js"></script>
+</body>
+
+</html>

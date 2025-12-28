@@ -1,0 +1,181 @@
+/* ===================================
+   GLOBAL STYLES (Filtered for Home Page)
+   =================================== */
+
+/* === FONTS & ROOT VARIABLES === */
+@font-face {
+    font-family: "Vazirmatn";
+    src: local("Vazirmatn"), url("../fonts/Vazirmatn/Vazirmatn-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --bs-font-sans-serif: "Vazirmatn", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --hue: 223;
+    --primary: hsl(var(--hue), 90%, 55%);
+    --primaryT: hsla(var(--hue), 90%, 55%, 0);
+    --transDur: 0.3s;
+    --accent-color: #3498db;
+    --accent-hover: #2980b9;
+    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* === UTILITY CLASSES === */
+.hidden {
+    display: none !important;
+}
+
+/* === TYPOGRAPHY === */
+.name-text {
+    font-weight: 700;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    line-height: 1.2;
+}
+
+.subtitle-text {
+    font-weight: 300;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+[data-bs-theme="dark"] .subtitle-text {
+    color: #adb5bd;
+}
+
+/* === PROFILE IMAGE === */
+.profile-img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border: 5px solid var(--bs-body-bg);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* === SOCIAL ICONS === */
+.social-icons a {
+    color: #6C757D;
+    font-size: 2rem;
+    margin-inline-end: 15px;
+    text-decoration: none;
+    transition: color 0.2s, transform 0.2s;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+[data-bs-theme="dark"] .social-icons a {
+    color: #adb5bd;
+}
+
+.social-icons a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--gradient-primary);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover::after {
+    transform: translateX(0);
+}
+
+.social-icons a:hover {
+    color: #3498db;
+    transform: translateY(-3px);
+}
+
+.social-icons a:last-child {
+    margin-inline-end: 0;
+}
+
+/* === THEME & LANGUAGE TOGGLERS === */
+.lang-wrapper {
+    display: flex;
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+    -webkit-tap-highlight-color: transparent;
+    font-weight: 500;
+    transform: scale(0.8);
+}
+
+.lang-toggle-wrap {
+    margin: 0 0.75em;
+    direction: ltr;
+    position: relative;
+}
+
+.lang-toggle {
+    background-color: hsl(48, 90%, 85%);
+    border-radius: 25% / 50%;
+    box-shadow: 0 0 0 0.125em var(--primaryT);
+    padding: 0.25em;
+    width: 6em;
+    height: 3em;
+    -webkit-appearance: none;
+    appearance: none;
+    transition: background-color var(--transDur) ease-in-out,
+        box-shadow 0.15s ease-in-out,
+        transform var(--transDur) ease-in-out;
+    cursor: pointer;
+    display: block;
+    position: relative;
+}
+
+.lang-toggle:before {
+    background-color: hsl(48, 90%, 55%);
+    border-radius: 50%;
+    content: "";
+    width: 2.5em;
+    height: 2.5em;
+    transition: background-color var(--transDur) ease-in-out,
+        transform var(--transDur) ease-in-out;
+    display: block;
+}
+
+.lang-toggle:focus {
+    box-shadow: 0 0 0 0.125em var(--primary);
+    outline: transparent;
+}
+
+.lang-toggle:checked {
+    background-color: hsl(198, 90%, 15%);
+}
+
+.lang-toggle:checked:before {
+    background-color: hsl(198, 90%, 55%);
+    transform: translateX(3em);
+}
+
+/* === RESPONSIVE STYLES === */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .name-text {
+        font-size: clamp(2rem, 8vw, 2.8rem);
+    }
+
+    .subtitle-text {
+        font-size: 1.1rem;
+    }
+}

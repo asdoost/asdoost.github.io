@@ -1,0 +1,249 @@
+/* =========================================
+   BLOG POST PAGE STYLING
+   ========================================= */
+
+/* Reading Progress Bar at top of screen */
+.progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    z-index: 9999;
+    background: transparent;
+}
+
+.progress-bar {
+    height: 4px;
+    background: #0d6efd; /* Bootstrap Primary Color */
+    width: 0%;
+    transition: width 0.1s ease;
+}
+
+/* Page Layout */
+.post-wrapper {
+    padding-top: 80px; /* Space for fixed sidebar/btn */
+    padding-bottom: 80px;
+    min-height: 100vh;
+}
+
+/* Limit content width for readability (approx 750px) */
+.post-wrapper .container {
+    max-width: 800px; 
+}
+
+/* 1. Navigation (Back link) */
+.post-navigation {
+    margin-bottom: 2rem;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--text-color, #333); /* Fallback color */
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    opacity: 1;
+}
+
+/* 2. Header */
+.post-header {
+    margin-bottom: 2rem;
+}
+
+.post-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-muted, #6c757d);
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.post-category {
+    color: #0d6efd;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.post-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+    color: var(--heading-color, inherit);
+}
+
+/* Author Block */
+.post-author-block {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.author-role {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* 3. Featured Image */
+.post-featured-image {
+    margin-bottom: 3rem;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.post-featured-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.post-featured-image:hover img {
+    transform: scale(1.02);
+}
+
+/* 4. Article Content Typography */
+.post-content {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-color, inherit);
+}
+
+/* Add margins to elements inside article */
+.post-content > * {
+    margin-bottom: 1.5rem;
+}
+
+.post-content .lead {
+    font-size: 1.35rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+}
+
+.post-content h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.post-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.post-content ul, .post-content ol {
+    padding-inline-start: 2rem; /* Logical property for RTL/LTR support */
+}
+
+.post-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Blockquote Styling */
+.post-content blockquote {
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 500;
+    padding: 2rem;
+    margin: 2.5rem 0;
+    background: rgba(128, 128, 128, 0.05);
+    border-radius: 8px;
+    position: relative;
+    /* Logical border side for RTL support */
+    border-inline-start: 4px solid #0d6efd; 
+}
+
+/* 5. Footer / Tags / Share */
+.post-footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.post-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: rgba(128, 128, 128, 0.1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.tag:hover {
+    background: #0d6efd;
+    color: white;
+}
+
+.share-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.share-buttons span {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.share-buttons a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(128, 128, 128, 0.1);
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.share-buttons a:hover {
+    background: #0d6efd;
+    color: white;
+    transform: translateY(-2px);
+}

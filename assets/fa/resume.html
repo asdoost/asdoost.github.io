@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>رزومه</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet"
+        id="bootstrap-rtl-link">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link type="text/css" rel="stylesheet" href="../css/global.css">
+    <link type="text/css" rel="stylesheet" href="../css/resume.css">
+</head>
+
+<body>
+    <!-- 1. Menu Button -->
+    <button class="floating-btn" type="button" id="sidebar-toggler" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="material-symbols-outlined fs-2">menu</span>
+    </button>
+
+    <!-- 2. Sidebar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header pb-0">
+            <h5 class="offcanvas-title visually-hidden" id="offcanvasNavbarLabel">منو</h5>
+        </div>
+        <div class="offcanvas-body d-flex flex-column h-100 mt-5">
+            <nav aria-label="Primary navigation">
+                <a class="nav-link-custom" href="../../index.html">
+                    <span class="nav-icon material-symbols-outlined" aria-hidden="true">home</span>
+                    خانه
+                </a>
+                <a class="nav-link-custom" href="../fa/resume.html">
+                    <span class="nav-icon material-symbols-outlined" aria-hidden="true">description</span>
+                    رزومه
+                </a>
+                <a class="nav-link-custom" href="../fa/blog.html">
+                    <span class="nav-icon material-symbols-outlined" aria-hidden="true">article</span>
+                    بلاگ
+                </a>
+                <a class="nav-link-custom" href="../fa/gallery.html">
+                    <span class="nav-icon material-symbols-outlined" aria-hidden="true">photo_library</span>
+                    گالری
+                </a>
+            </nav>
+            <div class="togglers mt-auto">
+                <div class="theme-wrapper">
+                    <label for="theme" class="theme">
+                        <span>روشن</span>
+                        <span class="theme__toggle-wrap">
+                            <input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme"
+                                value="dark">
+                            <span class="theme__icon">
+                                <span class="theme__icon-part"></span><span class="theme__icon-part"></span><span
+                                    class="theme__icon-part"></span>
+                                <span class="theme__icon-part"></span><span class="theme__icon-part"></span><span
+                                    class="theme__icon-part"></span>
+                                <span class="theme__icon-part"></span><span class="theme__icon-part"></span><span
+                                    class="theme__icon-part"></span>
+                            </span>
+                        </span>
+                        <span>تاریک</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dynamic Page Content Area -->
+    <main class="page-content-wrapper">
+        <div class="container py-4 py-lg-5">
+
+            <!-- Resume Header -->
+            <div class="resume-header text-center">
+                <h1 class="display-5 fw-bold mb-2">
+                    <span>رزومه من</span>
+                </h1>
+            </div>
+
+            <!-- Tab Navigation -->
+            <div class="tab-nav-wrapper mb-4">
+                <ul class="nav nav-pills resume-tabs justify-content-center flex-nowrap" id="resumeTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="tab-work" data-bs-toggle="pill" data-bs-target="#pane-work"
+                            type="button" role="tab">
+                            <i class="fas fa-briefcase me-2"></i>
+                            <span class="tab-text">تجربیات شغلی</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab-education" data-bs-toggle="pill"
+                            data-bs-target="#pane-education" type="button" role="tab">
+                            <i class="fas fa-graduation-cap me-2"></i>
+                            <span class="tab-text">تحصیلات</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab-publication" data-bs-toggle="pill"
+                            data-bs-target="#pane-publication" type="button" role="tab">
+                            <i class="fas fa-book me-2"></i>
+                            <span class="tab-text">آثار</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab-projects" data-bs-toggle="pill" data-bs-target="#pane-projects"
+                            type="button" role="tab">
+                            <i class="fas fa-code me-2"></i>
+                            <span class="tab-text">پروژه‌ها</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab-certificates" data-bs-toggle="pill"
+                            data-bs-target="#pane-certificates" type="button" role="tab">
+                            <i class="fas fa-certificate me-2"></i>
+                            <span class="tab-text">گواهی‌ها</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="resumeTabsContent">
+
+                <!-- Work Experience -->
+                <div class="tab-pane fade show active" id="pane-work" role="tabpanel" tabindex="0">
+                    <div class="content-card">
+                        <div class="section-header">
+                            <h2 class="section-title">
+                                <i class="fas fa-briefcase text-primary me-3"></i>
+                                <span class="tab-text">تجربیات شغلی</span>
+                            </h2>
+                        </div>
+
+                        <div class="timeline">
+                            <!-- Timeline Item 1 -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker current"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4 class="timeline-title">
+                                            <span>مدرس زبان</span>
+                                        </h4>
+                                        <span class="badge bg-success">اکنون</span>
+                                    </div>
+                                    <div class="timeline-meta">
+                                        <span><i class="fas fa-calendar-alt me-1"></i>۱۴۰۴ - امروز</span>
+                                    </div>
+                                    <p class="timeline-description">
+                                        <span>آموزش دوره های زبان و توسعه محتواهای آموزشی</span>
+                                    </p>
+                                    <div class="timeline-tags">
+                                        <span class="tag">آموزش</span>
+                                        <span class="tag">محتوای آموزشی</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Timeline Item 2 -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker current"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4 class="timeline-title">
+                                            <span>مترجم و محقق آزاد</span>
+                                        </h4>
+
+                                        <span class="badge bg-success">اکنون</span>
+                                    </div>
+                                    <div class="timeline-meta">
+                                        <span><i class="fas fa-calendar-alt me-1"></i>۱۳۹۴ - امروز</span>
+                                    </div>
+                                    <p class="timeline-description">
+                                        <span>ترجمه و تحقیق در حوزه زبانشناسی و پردازش زبان طبیعی</span>
+                                    </p>
+                                    <div class="timeline-tags">
+                                        <span class="tag">ترجمه</span>
+                                        <span class="tag">تحقیق</span>
+                                        <span class="tag">زبانشناسی</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Timeline Item 3 -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4 class="timeline-title">
+                                            <span>مدرس زبان</span>
+                                        </h4>
+                                    </div>
+                                    <div class="timeline-meta">
+                                        <span><i class="fas fa-calendar-alt me-1"></i>شهریور ۱۴۰۴ - آبان
+                                            ۱۴۰۴</span>
+                                    </div>
+                                    <p class="timeline-description">
+                                        <span>آموزش دوره های زبان و توسعه محتواهای آموزشی</span>
+                                    </p>
+                                    <div class="timeline-tags">
+                                        <span class="tag">آموزش</span>
+                                        <span class="tag">محتوای آموزشی</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Timeline Item 4 -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4 class="timeline-title">
+                                            <span>فرهنگ‌نویس</span>
+                                        </h4>
+                                    </div>
+                                    <div class="timeline-meta">
+                                        <span><i class="fas fa-calendar-alt me-1"></i>۱۳۹۲ - ۱۳۹۴</span>
+                                    </div>
+                                    <p class="timeline-description">
+                                        <span>مشارکت در تدوین فرهنگ جامع زبان فارسی.</span>
+                                    </p>
+                                    <div class="timeline-tags">
+                                        <span class="tag">فرهنگ نویس</span>
+                                        <span class="tag">لغتنامه</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Timeline Item 5 -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4 class="timeline-title">
+                                            <span>کپی‌رایتر</span>
+                                        </h4>
+                                    </div>
+                                    <div class="timeline-meta">
+                                        <span><i class="fas fa-calendar-alt me-1"></i>۱۳۸۵ - ۱۳۸۸</span>
+                                    </div>
+                                    <p class="timeline-description">
+                                        <span>تولید محتوای تبلیغاتی.</span>
+                                    </p>
+                                    <div class="timeline-tags">
+                                        <span class="tag">نویسندگی</span>
+                                        <span class="tag">تولید محتوا</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="tab-pane fade" id="pane-education" role="tabpanel" tabindex="0">
+                    <div class="content-card">
+                        <div class="section-header">
+                            <h2 class="section-title">
+                                <i class="fas fa-graduation-cap text-primary me-3"></i>
+                                <span>تحصیلات</span>
+                            </h2>
+                        </div>
+
+                        <div class="timeline education-timeline">
+                            <!-- PhD -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker education-marker phd"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4 class="timeline-title">
+                                            <span>دکترای زبانشناسی</span>
+                                        </h4>
+                                        <span class="badge bg-primary">دکترا</span>
+                                    </div>
+                                    <div class="timeline-institution">
+                                        <i class="fas fa-university me-2"></i>
+                                        <span>دانشگاه تربیت مدرس</span>
+                                    </div>
+                                    <div class="timeline-meta">
+                                        <span><i class="fas fa-calendar-alt me-1"></i>شهریور ۱۳۹۸ - اردیبهشت
+                                            ۱۴۰۴</span>
+                                    </div>
+                                    <div class="thesis-card">
+                                        <h6><i class="fas fa-scroll me-2"></i>
+                                            <span>رساله</span>
+                                        </h6>
+                                        <p class="thesis-title">
+                                            <span>
+                                                مواجهه با گونه طبیعی فارسی:
+                                                پیکره‌سازی، حاشیه‌نویسی، کدگذاری، و پردازش گونه نوشتاری دیجیتال فارسی
+                                            </span>
+                                        </p>
+                                        <button class="btn btn-sm btn-outline-primary" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#abstract1">
+                                            <i class="fas fa-chevron-down me-1"></i>
+                                            <span>مشاهده چکیده</span>
+                                        </button>
+                                        <div class="collapse mt-3" id="abstract1">
+                                            <div class="abstract-content">
+                                                <p>
+                                                    تحول ارتباطات از عصر پسانوشتاری به عصر ارتباط-از-راه-دور گونه
+                                                    نوشتاری دیجیتال را پدید آورده که بخش اعظمی از ارتباطات روزمره را به
+                                                    خود اختصاص داده است. این گونه، برخلاف گونه نوشتاری که دستور تجویزی
+                                                    نقش کانونی در آن ایفا می‌کرد، فاقد مرکزیت است. این ویژگی، گونه
+                                                    نوشتاری دیجیتال را به گونه‌ای سرکش در پژوهش‌های زبانی تبدیل کرده که
+                                                    رویکردهای پیشین را به چالش می‌کشد. در این رساله ما رویکردی متفاوت را
+                                                    در مواجهه با این گونه زبانی پیشنهاد کردیم و این رویکرد را در
+                                                    بازخوانی، بازنگری، و ارائه راهکارهایی در پیکره‌سازی، پیش‌پردازش،
+                                                    کدگذاری، و تگزنی پیکره‌ای از این گونه زبانی به کار گرفتیم. هدف ما
+                                                    ساده‌سازی تکالیف پردازشی پایه، در عین حفظ تنوعات زبانی و نگارشی
+                                                    پیکره بود. این رویکرد با حفظ تنوعات در مرحله پیش‌پردازش، تکلیف تمایز
+                                                    هویت واژگان را بین فرایندهای پردازشی دیگر توزیع می‌کند. در این مسیر،
+                                                    ابتدا پیکره‌ای با عنوان «۱۴۰۰» از یک-میلیون توییت تصادفی از
+                                                    توییت‌های سال ۱۴۰۰ را استخراج کردیم. سپس یک-میلیون توکن از این پیکره
+                                                    را، به عنوان یک ریزپیکره و با هدف پیش‌پردازش، تگزنی، و لمایابی جدا
+                                                    کردیم. در نرمال‌سازی و توکن‌یابی از دو راهکار حذف عناصری که تنوعات
+                                                    قراردادی تولید می‌کنند (م: نیم‌فاصله)، و تقطیع عناصری که اجزاءشان
+                                                    دارای هویت دستوری‌اند (م: ترکیبات منقطع)، برای ساده‌سازی این دو
+                                                    فرایند بهره بردیم. برای تگزنی پیکره چارچوبی جدید و منعطف، با عنوان
+                                                    تگفریم، برای کدگذاری تگ‌ها ارائه کردیم که علاوه بر امکان بازنمایی
+                                                    اطلاعات زبانی و پیرازبانی، قادر به بازنمایی ساختار درونی واژگان است.
+                                                    از این چارچوب برای ارائه یک تگفریم استاندارد برای فارسی استفاده
+                                                    کردیم که شامل بازنگری در برخی از مفاهیم دستوری (م: ضمیر، مصدر، قید)،
+                                                    و افزودن مقولات و لایه‌هایی می‌شد که هویت زبانی، ساختار واژگانی (م:
+                                                    واژه‌بست‌ها)، و ویژگی‌های پیرازبانی (م: واژه‌های تابو) توکن‌ها را
+                                                    بازنمایی می‌کند. در لمایابی هم از اعراب‌گذاری برای متمایز کردن هویت
+                                                    هم‌نویسه‌ها استفاده شد. در تگزنی پیکره از ۲۵ مقوله زبانی با ۸۲ ویژگی
+                                                    زبانی، و در سه لایه زبانی، درون-واژگانی، و پیرازبانی، بهره بردیم.
+                                                    تحلیل آماری و مقایسه پیکره با پیکره‌های دیگر، بسامد بالای توکن‌های
+                                                    تک‌بسامدی و افعال را نشان می‌دهد که ویژگی اول تنوعات پیکره، و ویژگی
+                                                    دوم اشتراکات سیاق پیکره با سیاق محاوره‌ای را بازنمایی می‌کند. تدوین
+                                                    این پیکره و راهکارهایی که در این پژوهش ارائه شد، بستری را فراهم
+                                                    می‌کند که تدوین و پردازش پیکره‌های مشابه را تسهیل کرده و زمینه
+                                                    مطالعات زبانشناختی و غیرزبانشناختی بر روی این گونه و گونه‌های مشابه
+                                                    زبانی را فراهم می‌کند.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Masters -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker education-marker masters"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4 class="timeline-title">
+                                            <span>کارشناسی ارشد زبانشناسی</span>
+                                        </h4>
+                                        <span class="badge bg-info">
+                                            <span>کارشناسی ارشد</span>
+                                        </span>
+                                    </div>
+                                    <div class="timeline-institution">
+                                        <i class="fas fa-university me-2"></i>
+                                        <span>دانشگاه تربیت مدرس</span>
+                                    </div>
+                                    <div class="timeline-meta">
+                                        <span><i class="fas fa-calendar-alt me-1"></i>شهریور ۱۳۹۲ - تیر
+                                            ۱۳۹۵</span>
+                                    </div>
+                                    <div class="thesis-card">
+                                        <h6><i class="fas fa-scroll me-2"></i>
+                                            <span>رساله</span>
+                                        </h6>
+                                        <p class="thesis-title">
+                                            <span>
+                                                تصریف زمان دستوری افعال زبان فارسی و شیوه پردازش آن: رویکردی
+                                                زبان-روانشناختی
+                                            </span>
+                                        </p>
+                                        <button class="btn btn-sm btn-outline-primary" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#abstract2">
+                                            <i class="fas fa-chevron-down me-1"></i>
+                                            <span>مشاهده چکیده</span>
+                                        </button>
+                                        <div class="collapse mt-3" id="abstract2">
+                                            <div class="abstract-content">
+                                                <p>
+                                                    در این پژوهش وضعیت صورت‌های پیچیده تصریفی را در ذهن سخنگویان
+                                                    زبان فارسی، با تمرکز بر روی تصریف زمان دستوری افعال ساده زبان
+                                                    فارسی، در بی‌نشان‌ترین حالت آن (: حال اخباری و گذشته ساده)، مورد
+                                                    بررسی قراردادیم. دستیابی به چنین هدفی مستلزم بازنگری در برخی از
+                                                    مفاهیم در این حوزه بود. به همین منظور سه پرسش مطرح‌کردیم که دو
+                                                    پرسش نخست، ناظر بر چنین بازنگری‌ای بود و پرسش سوم به شیوه پردازش
+                                                    واحدهای پیچیده صرفیِ حاصل از تصریف زمان دستوری اختصاص‌داشت: 1.
+                                                    چه تقسیم‌بندی‌‌ای را براساس مفهوم رگولاریتی می‌توان از افعال
+                                                    زبان فارسی ارائه‌کرد؟ 2. چه مدلی را می‌توان از فرایند تصریف زمان
+                                                    دستوری در افعال زبان فارسی ارائه‌کرد که بازنمایی مناسبی از
+                                                    عملکرد ذهنی این فرایند باشد؟ 3. تمایز میان افعال رگولار و
+                                                    غیررگولار ریشه در کدام مکانیسم‌های ذهنی دارد؟ برای دستیابی به
+                                                    داده‌هایی که بتوان با استناد به آنها این سه پرسش را مورد سنجش
+                                                    قرارداد، دو آزمایش تجربی طراحی‌کردیم که در آن خطاهای کاربران
+                                                    زبان در تصریف زمان دستوری در مواجهه با افعال واقعی و ناواژه‌ها
+                                                    جمع‌آوری‌می‌شد. نتایج به‌دست‌آمده نشان‌داد که براساس مفهوم
+                                                    رگولاریتی افعال زبان فارسی را می‌توان به سه دسته افعال رگولار،
+                                                    غیررگولار، و آلترناتیو تقسیم‌کرد: افعال آلترناتیو طبقه بازی از
+                                                    افعال هستند که پایه آنها از بیش از دو هجا تشکیل‌شده، به توالی
+                                                    واجی -ɑn ختم‌می‌شود، در فهرست افعال غیررگولار حضورندارند و
+                                                    می‌توانند با دو وند -d و -id به گذشته صرف‌شوند؛ افعال غیررگولار
+                                                    فهرستی از افعال را تشکیل‌می‌دهند که هیچ رابطه نظام‌مندی میان
+                                                    ریشه و بنِ گذشته آنها وجودندارد؛ و افعال رگولار شامل تمام افعال
+                                                    بالفعل و بالقوه زبان فارسی می‌شود که در دو دسته پیشین جای نداشته
+                                                    و از الگوی «ریشه + -id» در تصریف گذشته خود بهره‌می‌برند. نتایج
+                                                    به‌دست‌آمده در رابطه با پرسش دوم نشان‌می‌داد که صورت حال افعال
+                                                    رگولار و غیررگولار، و همینطور صورت گذشته اکثر افعال رگولار از
+                                                    ریشه مشتق‌می‌شوند؛ درمقابل صورت گذشته افعال غیررگولار و افعالِ
+                                                    رگولارِ بسیار پربسامد، با بازیابی بنِ گذشته این افعال از حافظه و
+                                                    سپس افزودن شناسه تولید‌می‌شوند. نتایج به‌دست‌آمده در رابطه با
+                                                    پرسش سوم، که به سنجش ادعای نظریه مکانیسم دوگانه اختصاص داشت، در
+                                                    تائید آرای این نظریه، نشان‌می‌داد که افعال رگولار با مکانیسم
+                                                    قاعده و افعال غیررگولار با مکانیسم حافظه تولید‌می‌شوند.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bachelors -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker education-marker bachelors"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h4 class="timeline-title">
+                                            <span>کارشناسی زبانشناسی</span>
+                                        </h4>
+                                        <span class="badge bg-secondary">
+                                            <span>کارشناسی</span>
+                                        </span>
+                                    </div>
+                                    <div class="timeline-institution">
+                                        <i class="fas fa-university me-2"></i>
+                                        <span>دانشگاه شیراز</span>
+                                    </div>
+                                    <div class="timeline-meta">
+                                        <span><i class="fas fa-calendar-alt me-1"></i>شهریور ۱۳۸۸ - خرداد
+                                            ۱۳۹۲</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publications -->
+                <div class="tab-pane fade" id="pane-publication" role="tabpanel" tabindex="0">
+                    <div class="content-card">
+                        <div class="section-header">
+                            <h2 class="section-title">
+                                <i class="fas fa-book text-primary me-3"></i>
+                                <span>آثار</span>
+                            </h2>
+                        </div>
+
+                        <!-- Journal Articles -->
+                        <div class="publication-section">
+                            <h3 class="subsection-title">
+                                <span class="subsection-icon"><i class="fas fa-file-alt"></i></span>
+                                <span>مقالات پژوهشی</span>
+                            </h3>
+
+                            <div class="publication-grid">
+
+                                <!-- Publication Card 1 -->
+                                <div class="publication-card">
+                                    <div class="publication-year">
+                                        <span>۱۴۰۲</span>
+                                    </div>
+                                    <div class="publication-body">
+                                        <h5 class="publication-title">
+                                            <a href="https://rjhll.basu.ac.ir/article_5558.html">
+                                                مقوله‌ و ساختار عددواژه‌های فارسی
+                                            </a>
+                                        </h5>
+                                        <p class="publication-journal">
+                                            <i class="fas fa-journal-whills me-2"></i>
+                                            <span>پژوهش‌های زبانشناسی تطبیقی</span>
+                                        </p>
+                                        <div class="publication-doi">
+                                            <i class="fas fa-link me-2"></i>
+                                            <a
+                                                href="https://rjhll.basu.ac.ir/article_5558.html">10.22084/rjhll.2024.28776.2303</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Publication Card 2 -->
+                                <div class="publication-card">
+                                    <div class="publication-year">
+                                        <span>۱۴۰۱</span>
+                                    </div>
+                                    <div class="publication-body">
+                                        <h5 class="publication-title">
+                                            <a href="https://rjhll.basu.ac.ir/article_5098.html">
+                                                نظریه واژگان و قواعد در برابر واجشناسی زایشی:
+                                                مطالعه‌ای بر روی تصریف گذشته افعال زبان فارسی
+                                            </a>
+                                        </h5>
+                                        <p class="publication-journal">
+                                            <i class="fas fa-journal-whills me-2"></i>
+                                            <span>پژوهش‌های زبانشناسی تطبیقی</span>
+                                        </p>
+                                        <div class="publication-doi">
+                                            <i class="fas fa-link me-2"></i>
+                                            <a
+                                                href="https://rjhll.basu.ac.ir/article_5098.html">10.22084/rjhll.2022.26069.2209</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Publication Card 3 -->
+                                <div class="publication-card">
+                                    <div class="publication-year">
+                                        <span>۱۳۹۹</span>
+                                    </div>
+                                    <div class="publication-body">
+                                        <h5 class="publication-title">
+                                            <a href="https://ls.atu.ac.ir/article_13334.html">
+                                                توزیع واج‌های خیشومی در خوشه دو همخوانی؛
+                                                و ویژگی‌های توزیعی-واج شناختی وام‌واژه‌ها در زبان فارسی
+                                            </a>
+                                        </h5>
+                                        <p class="publication-journal">
+                                            <i class="fas fa-journal-whills me-2"></i>
+                                            <span>علم زبان</span>
+                                        </p>
+                                        <div class="publication-doi">
+                                            <i class="fas fa-link me-2"></i>
+                                            <a
+                                                href="https://doi.org/10.22054/ls.2019.36693.1139">10.22054/ls.2019.36693.1139</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Encyclopedia Entries -->
+                        <div class="publication-section">
+                            <h3 class="subsection-title">
+                                <span class="subsection-icon"><i class="fas fa-book-open"></i></span>
+                                <span>مدخل‌های دانشنامه‌ای</span>
+                            </h3>
+
+                            <div class="publication-card horizontal">
+                                <div class="publication-year">
+                                    <span>۱۳۹۷</span>
+                                </div>
+                                <div class="publication-body">
+                                    <h5 class="publication-title">
+                                        <span>دانشنامه زبان و ادب فارسی (جلد ۶)</span>
+                                    </h5>
+                                    <p class="publication-meta">
+                                        <span><i class="fas fa-user me-1"></i>
+                                            <span>وفا زواره‌ای</span>
+                                        </span>
+                                    </p>
+                                    <p class="publication-meta">
+                                        <span><i class="fas fa-building me-1"></i>
+                                            <span>نشر فرهنگستان زبان و ادب فارسی</span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dictionaries -->
+                        <div class="publication-section">
+                            <h3 class="subsection-title">
+                                <span class="subsection-icon"><i class="fas fa-spell-check"></i></span>
+                                <span>لغتنامه‌ها</span>
+                            </h3>
+
+                            <div class="publication-card horizontal">
+                                <div class="publication-year">
+                                    <span>۱۳۹۶</span>
+                                </div>
+                                <div class="publication-body">
+                                    <h5 class="publication-title">
+                                        <span>فرهنگ جامع زبان فارسی (جلد دوم)</span>
+                                    </h5>
+                                    <p class="publication-meta">
+                                        <span><i class="fas fa-building me-1"></i>
+                                            <span>نشر فرهنگستان زبان و ادب فارسی</span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects -->
+                <div class="tab-pane fade" id="pane-projects" role="tabpanel" tabindex="0">
+                    <div class="content-card">
+                        <div class="section-header">
+                            <h2 class="section-title">
+                                <i class="fas fa-code text-primary me-3"></i>
+                                <span>پروژه‌ها</span>
+                            </h2>
+                        </div>
+
+                        <div class="projects-grid">
+
+                            <!-- Project Card 1 -->
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <div class="project-icon">
+                                        <i class="fas fa-microscope"></i>
+                                    </div>
+                                    <h4 class="project-title">
+                                        <span>آزمایشگاه پیکره (CorpusLab)</span>
+                                    </h4>
+                                    <span class="project-status active">فعال</span>
+                                </div>
+                                <p class="project-description">
+                                    <span>آزمایشگاه پیکره (CorpusLab) پروژه‌ای است با هدف ارائه پیکره‌های
+                                        فارسی و ابزارهای
+                                        تحلیل پیکره برای مطالعات زبانشناختی و غیرزبانشناختی</span>
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">پیکره</span>
+                                    <span class="tag">پردازش زبان های طبیعی</span>
+                                    <span class="tag">فارسی</span>
+                                </div>
+                                <div class="project-links">
+                                    <p class="project-link">
+                                        <i class="fas fa-external-link-alt me-1"></i>
+                                        <span>به زودی ...</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Project Card 2 -->
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <div class="project-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <h4 class="project-title">
+                                        <span>۱۴۰۰</span>
+                                    </h4>
+                                </div>
+                                <p class="project-description">
+                                    پیکره ۱۴۰۰ پروژه‌ای است که در آن پیکره‌ای حاوی یک میلیون توییت از توییت‌های سال ۱۴۰۰
+                                    را تهیه می‌کنیم. بخشی از این پیکره به صورت دستی نرمال‌سازی، تگزنی، و لما‌یابی خواهد
+                                    شد.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">پیکره</span>
+                                    <span class="tag">پردازش زبان های طبیعی</span>
+                                    <span class="tag">فارسی</span>
+                                </div>
+                            </div>
+
+                            <!-- Project Card 3 -->
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <div class="project-icon">
+                                        <i class="fas fa-brain"></i>
+                                    </div>
+                                    <h4 class="project-title">
+                                        <span>مطالعه زبان-روانشناختی تصریف افعال</span>
+                                    </h4>
+                                </div>
+                                <p class="project-description">
+                                    در این پروژه چگونگی تولید و درک افعال منظم و نامنظم و مکانیسم‌های روانشناختی
+                                    دخیل در پردازش آنها، و چگونگی سازماندهی آنها در مغز را بررسی می‌کنیم. تمرکز ما
+                                    در این پروژه بر روی تصریف گذشته افعال است.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">روانشناسی زبان</span>
+                                    <span class="tag">ساختواژه</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://rjhll.basu.ac.ir/article_5098.html" class="project-link">
+                                        <i class="fas fa-external-link-alt me-1"></i>آثار مرتبط
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Project Card 4 -->
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <div class="project-icon">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                    <h4 class="project-title">
+                                        <span>سی پی وی آی (تصریف‌گر جامع افعال فارسی)</span>
+                                    </h4>
+                                </div>
+                                <p class="project-description">
+                                    سی پی وی آی (Comprehensive Persian Verb Inflector) یک نرم‌افزار تصریف افعال فارسی
+                                    است که در تصریف افعال از نظریه مکانیسم دوگانه (نظریه واژگان و قواعد) بهره
+                                    می‌گیرد.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">پایتون</span>
+                                    <span class="tag">ابزارهای پردازشی</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/asdoost/CPVI" class="project-link">
+                                        <i class="fab fa-github me-1"></i>در گیت‌هاب مشاهده کنید
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Project Card 5 -->
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <div class="project-icon">
+                                        <i class="fas fa-wave-square"></i>
+                                    </div>
+                                    <h4 class="project-title">
+                                        <span>واج‌آرایی، واج‌آماری، و هجابندی واژگان فارسی</span>
+                                    </h4>
+                                </div>
+                                <p class="project-description">
+                                    <span>
+                                        در این پروژه واج‌آرایی، واج‌آماری، و هجابندی ۵۵۰۰۰ واژه فارسی را مطالعه می‌کنیم.
+                                    </span>
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">واجشناسی</span>
+                                    <span class="tag">واج‌آرایی</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://ls.atu.ac.ir/article_13334.html" class="project-link">
+                                        <i class="fas fa-external-link-alt me-1"></i>آثار مرتبط
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Project Card 6 -->
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <div class="project-icon">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                    <h4 class="project-title">
+                                        فلکسیکون ارتقایافته
+                                    </h4>
+                                </div>
+                                <p class="project-description">
+                                    فلکسیکون ارتقایافته نسخه تصحیح‌شده و ارتقایافته از پیکره فلکسیکون است. واج‌نگاری
+                                    آی‌پی‌ای، هجابندی، افزودن چاکنای آغازین به واژه‌های آغازشده با مصوت، و اصلاح خطاهای
+                                    تایپی/نگارشی ازجمله فرایندهایی است که در این نسخه اعمال شده است.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">پیکره</span>
+                                    <span class="tag">واژگان</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/asdoost/Enhanced_Flexicon" class="project-link">
+                                        <i class="fab fa-github me-1"></i>
+                                        در گیت‌هاب مشاهده کنید
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificates -->
+                <div class="tab-pane fade" id="pane-certificates" role="tabpanel" tabindex="0">
+                    <div class="content-card">
+                        <div class="section-header">
+                            <h2 class="section-title">
+                                <i class="fas fa-certificate text-primary me-3"></i>
+                                <span>گواهی‌ها</span>
+                            </h2>
+                            <p class="section-subtitle">
+                                <span>برای دیدن فهرست کامل بر روی هر موضوع کلیک کنید</span>
+                            </p>
+                        </div>
+
+                        <div class="accordion certificates-accordion" id="certificatesAccordion">
+
+                            <!-- ML & NLP Section -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseMLNLP" aria-expanded="true">
+                                        <span class="category-icon"><i class="fas fa-robot"></i></span>
+                                        <span class="category-title">یادگیری ماشینی و پردازش زبان طبیعی</span>
+                                        <span class="badge bg-primary rounded-pill ms-auto me-3">۱۵</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseMLNLP" class="accordion-collapse collapse"
+                                    data-bs-parent="#certificatesAccordion">
+                                    <div class="accordion-body">
+                                        <div class="certificate-list">
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Introduction to TensorFlow for AI, ML, and Deep Learning</h6>
+                                                    <span class="cert-issuer">DeepLearning.AI</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/K6Y4HLM8EWTS"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Natural Language Processing in TensorFlow</h6>
+                                                    <span class="cert-issuer">DeepLearning.AI</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/L95YZVA24QBJ"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>NLP with Classification and Vector Spaces</h6>
+                                                    <span class="cert-issuer">DeepLearning.AI</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/certificate/39PT7EBFHUPK"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Fine Tune BERT for Text Classification</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/certificate/9AWKHCK5HBV3"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Introduction to NLP in Python</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/84KDYLAJ9C29"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Transfer Learning for NLP with TensorFlow Hub</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/2HCG8GAM48SK"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Named Entity Recognition using LSTMs with Keras</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/F5NBURAA7BFC"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Fake News Detection with Machine Learning</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/E985AAGH9FWZ"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Convolutions for Text Classification with Keras</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/EGSM7HZX9JBM"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Tweet Emotion Recognition with TensorFlow</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/S32NY3M76AFS"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>NLP: Twitter Sentiment Analysis</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/NBTAPAJBH5ZE"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Basic Sentiment Analysis with TensorFlow</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/5F3TDXZU69DJ"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>The Data Scientist's Toolbox</h6>
+                                                    <span class="cert-issuer">Johns Hopkins University</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/T9VVDG3LYA89"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Programming Section -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseProgramming">
+                                        <span class="category-icon"><i class="fas fa-code"></i></span>
+                                        <span class="category-title">برنامه‌نویسی</span>
+                                        <span class="badge bg-success rounded-pill ms-auto me-3">۱۳</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseProgramming" class="accordion-collapse collapse"
+                                    data-bs-parent="#certificatesAccordion">
+                                    <div class="accordion-body">
+                                        <div class="certificate-list">
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Introduction to Git and GitHub</h6>
+                                                    <span class="cert-issuer">Google</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/QXC4S4SUSJVX"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Crash Course on Python</h6>
+                                                    <span class="cert-issuer">Google</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/TY2SKCFHLWRL"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Troubleshooting and Debugging Techniques</h6>
+                                                    <span class="cert-issuer">Google</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/SMK6EJC3NKMW"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Using Python to Interact with the Operating System</h6>
+                                                    <span class="cert-issuer">Google</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/9F2RU7Y8EUWZ"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item highlight">
+                                                <div class="cert-info">
+                                                    <h6>Python for Everybody (Specialization)</h6>
+                                                    <span class="cert-issuer">University of Michigan</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/specialization/G9Y6UZHB7MVK"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item highlight">
+                                                <div class="cert-info">
+                                                    <h6>Python 3 Programming (Specialization)</h6>
+                                                    <span class="cert-issuer">University of Michigan</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/specialization/7LW7W2L6T5HC"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Introduction to HTML5</h6>
+                                                    <span class="cert-issuer">University of Michigan</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/specialization/XVRPLQCGRHM7"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Introduction to CSS3</h6>
+                                                    <span class="cert-issuer">University of Michigan</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/specialization/FWXCD8UREFVY"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Introduction to Bash Shell Scripting</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/MGZUSQ524G2K"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Automation Scripts Using Bash</h6>
+                                                    <span class="cert-issuer">Coursera</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/2PFRXWCYY7YD"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Statistics Section -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseStats">
+                                        <span class="category-icon"><i class="fas fa-chart-bar"></i></span>
+                                        <span class="category-title">آمار</span>
+                                        <span class="badge bg-warning text-dark rounded-pill ms-auto me-3">۳</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseStats" class="accordion-collapse collapse"
+                                    data-bs-parent="#certificatesAccordion">
+                                    <div class="accordion-body">
+                                        <div class="certificate-list">
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Basic Statistics</h6>
+                                                    <span class="cert-issuer">University of Amsterdam</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/YMC6JZQFBTPG"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Quantitative Methods</h6>
+                                                    <span class="cert-issuer">University of Amsterdam</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/DFLY7NQ2TLKW"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Data Science Math Skills</h6>
+                                                    <span class="cert-issuer">Duke University</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/KDFY8FU862S7"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Linguistics & Psychology Section -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseLingPsych">
+                                        <span class="category-icon"><i class="fas fa-brain"></i></span>
+                                        <span class="category-title">زبانشناسی و روانشناسی</span>
+                                        <span class="badge bg-info rounded-pill ms-auto me-3">۵</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseLingPsych" class="accordion-collapse collapse"
+                                    data-bs-parent="#certificatesAccordion">
+                                    <div class="accordion-body">
+                                        <div class="certificate-list">
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>The Bilingual Brain</h6>
+                                                    <span class="cert-issuer">University of Houston</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/GNWHC4YT5U3B"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Fundamental Neuroscience for Neuroimaging</h6>
+                                                    <span class="cert-issuer">Johns Hopkins University</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/DUKZ5M7CM6G9"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Introduction to Psychology</h6>
+                                                    <span class="cert-issuer">University of Toronto</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/BYGC3ETHDDW6"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Big Data and Language 1</h6>
+                                                    <span class="cert-issuer">KAIST</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/HNHFREK7VJ6T"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate-item">
+                                                <div class="cert-info">
+                                                    <h6>Philosophy of Cognitive Sciences</h6>
+                                                    <span class="cert-issuer">University of Edinburgh</span>
+                                                </div>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/WAQRB9MGC9LQ"
+                                                    class="cert-link" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-0 opacity-75">
+                &copy; 2025. <strong>All tokens reserved.</strong> No unauthorized lemmatization.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/global.js"></script>
+</body>
+
+</html>

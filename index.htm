@@ -1,170 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 
 <head>
-  <title>Abbas Safardoost - Home</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="Abbas Safardoost's personal page">
-  <meta name="keywords" content="Abbas Safardoost, عباس صفردوست, asdoost">
-  <meta name="author" content="Abbas Safardoost">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-site-verification" content="60C_DQqQ6UiCrVLrcnrVcjtn-iXVpsmK4L3YaS8598w" />
-  <link type="text/css" rel="stylesheet" href="files/w3.css">
-  <link type="text/css" rel="stylesheet" href="files/css.css?family=Montserrat">
-  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://kit.fontawesome.com/8e177582ca.js" crossorigin="anonymous"></script>
-  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="canonical" href="index.html" />
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet" disabled
+        id="bootstrap-rtl-link">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="assets/css/index.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/global.css">
+    <style>
+        html[lang="en"] [lang="fa"] {
+            display: none !important;
+        }
+
+        html[lang="fa"] [lang="en"] {
+            display: none !important;
+        }
+    </style>
 </head>
 
 <body>
 
-  <!-- Sidebar with image -->
-  <nav class="css-sidebar css-hide-medium css-hide-small" style="width:30%">
-    <div class="bgimg"></div>
-  </nav>
+    <!-- 1. Menu Button -->
+    <button class="floating-btn" type="button" id="sidebar-toggler" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="material-symbols-outlined fs-2">menu</span>
+    </button>
 
-  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-  <nav class="css-sidebar css-black css-animate-right css-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2"
-    id="mySidebar">
-    <a href="javascript:void(0)" onclick="closeNav()" class="css-button css-black css-xxxlarge css-display-topright"
-      style="padding:0 12px;">
-      <i class="fa fa-remove"></i>
-    </a>
-    <div class="css-bar-block css-center">
-      <a href="https://asdoost.github.io" class="css-bar-item css-button css-text-grey css-hover-black" 
-         onclick="closeNav()">Home</a>
-      <a href="en/Resume.htm" class="css-bar-item css-button css-text-grey css-hover-black" 
-         onclick="closeNav()">Resume</a>
-      <a href="en/Blog.htm" class="css-bar-item css-button css-text-grey css-hover-black" 
-         onclick="closeNav()">Blog</a>
-      <a href="en/Tutorial.htm" class="css-bar-item css-button css-text-grey css-hover-black"
-        onclick="closeNav()">Tutorials</a>
-      <a href="en/NoteBooks.htm" class="css-bar-item css-button css-text-grey css-hover-black"
-        onclick="closeNav()">NoteBooks</a>
-      <a href="en/About.htm" class="css-bar-item css-button css-text-grey css-hover-black" 
-         onclick="closeNav()">About</a>
-      <a href="en/Contact.htm" class="css-bar-item css-button css-text-grey css-hover-black"
-        onclick="closeNav()">Contact</a>
-    </div>
-  </nav>
-
-  <!-- Page Content -->
-  <div class="css-main css-padding-large" style="margin-left:30%">
-
-    <!-- Menu icon to open sidebar -->
-    <span class="css-button css-top css-xxlarge css-text-grey css-hover-text-black" style="width:auto;right:0;"
-      onclick="openNav()"><i class="fa fa-bars"></i></span>
-
-    <!-- Header -->
-    <header class="css-container css-center" style="padding:128px 16px" id="home">
-      <h1 class="css-jumbo"><b>Abbas Safardoost</b></h1>
-
-      <div class="css-container">
-        <h5 class="css-opacity">
-          <b>Psycholinguist, Computational Linguist, Translator</b>
-        </h5>
-
-        <p>
-          <a href="https://scholar.google.com/citations?user=sIJPorYAAAAJ&hl=en&oi=ao" style="text-decoration:none">
-            <iconify-icon icon="academicons:google-scholar"
-              class="fa-fw css-margin-right css-xxlarge css-text-blue-grey css-hover-opacity"></iconify-icon>
-          </a>
-          <a href="https://www.orcid.org/0000-0003-1814-5550" style="text-decoration:none">
-            <iconify-icon icon="academicons:orcid"
-              class="fa-fw css-margin-right css-xxlarge css-text-blue-grey css-hover-opacity"></iconify-icon>
-          </a>
-          <a href="https://www.researchgate.net/profile/Abbas-Safardoost" style="text-decoration:none">
-            <iconify-icon icon="academicons:researchgate-square"
-              class="fa-fw css-margin-right css-xxlarge css-text-blue-grey css-hover-opacity"></iconify-icon>
-          </a>
-          <a href="https://github.com/asdoost" style="text-decoration:none">
-            <iconify-icon icon="akar-icons:github-fill"
-              class="fa-fw css-margin-right css-xxlarge css-text-blue-grey css-hover-opacity"></iconify-icon>
-          </a>
-        </p>
-      </div>
-      <!-- <img src="imgs/MyPhoto.jpg" class="css-image css-hide-large css-hide-small css-round"
-        style="display:block;width:60%;margin:auto;"> -->
-        <div>
-          <img src="imgs/MyPhoto.jpg" class="css-image css-hide-large css-hide-medium css-round">
+    <!-- 2. Sidebar -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header pb-0">
+            <h5 class="offcanvas-title visually-hidden" id="offcanvasNavbarLabel">Menu</h5>
         </div>
-    </header>
-    <!-- End Header Section -->
-    
-    <center>
-      <div class="switch">
-        <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" onclick="openurl()">
-        <label for="language-toggle"></label>
-        <span class="on">EN</span>
-        <span class="off">FA</span>
-      </div>
-    </center>
-
-    <div class="theme-container shadow-dark">
-      <img id="theme-icon" src="icons/moon.svg" alt="ERR">
+        <div class="offcanvas-body d-flex flex-column h-100 mt-5">
+            <nav aria-label="Primary navigation">
+                <a lang="en" class="nav-link-custom" href="index.html">
+                    <span class="nav-icon material-symbols-outlined" aria-hidden="true">home</span>
+                    Home
+                </a>
+                <a lang="fa" class="nav-link-custom" href="index.html">
+                    <span class="nav-icon material-symbols-outlined" aria-hidden="true">home</span>
+                    خانه
+                </a>
+                <a lang="en" class="nav-link-custom" href="assets/en/resume.html">
+                    <span class="nav-icon material-symbols-outlined" aria-hidden="true">description</span>
+                    Resume
+                </a>
+                <a lang="fa" class="nav-link-custom" href="assets/fa/resume.html">
+                    <span class="nav-icon material-symbols-outlined" aria-hidden="true">description</span>
+                    رزومه
+                </a>
+                <a lang="en" class="nav-link-custom" href="assets/en/blog.html">
+                    <span class="nav-icon material-symbols-outlined" aria-hidden="true">article</span>
+                    Blog
+                </a>
+                <a lang="fa" class="nav-link-custom" href="assets/fa/blog.html">
+                    <span class="nav-icon material-symbols-outlined" aria-hidden="true">article</span>
+                    بلاگ
+                </a>
+                <a lang="en" class="nav-link-custom" href="assets/en/gallery.html">
+                    <span class="nav-icon material-symbols-outlined" aria-hidden="true">photo_library</span>
+                    Gallery
+                </a>
+                <a lang="fa" class="nav-link-custom" href="assets/fa/gallery.html">
+                    <span class="nav-icon material-symbols-outlined" aria-hidden="true">photo_library</span>
+                    گالری
+                </a>
+            </nav>
+            <div class="togglers mt-auto">
+                <div class="theme-wrapper">
+                    <label for="theme" class="theme">
+                        <span><span lang="en">Light</span><span lang="fa">روشن</span></span>
+                        <span class="theme__toggle-wrap">
+                            <input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme"
+                                value="dark">
+                            <span class="theme__icon">
+                                <span class="theme__icon-part"></span><span class="theme__icon-part"></span><span
+                                    class="theme__icon-part"></span>
+                                <span class="theme__icon-part"></span><span class="theme__icon-part"></span><span
+                                    class="theme__icon-part"></span>
+                                <span class="theme__icon-part"></span><span class="theme__icon-part"></span><span
+                                    class="theme__icon-part"></span>
+                            </span>
+                        </span>
+                        <span><span lang="en">Dark</span><span lang="fa">تاریک</span></span>
+                    </label>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script>
-      // Open and close sidebar
-      document.body.style = "background-color: var(--bs-dark); color: var(--bs-light) ;transition: 0.5s;"
-      const sun = "icons/sun.svg";
-      const moon = "icons/moon.svg"
+    <!-- 3. Main Content -->
+    <div class="container min-vh-100 d-flex align-items-center py-5">
+        <div class="row w-100 align-items-center mx-auto">
+            <div class="col-md-6 order-1 d-flex justify-content-center justify-content-md-end pe-md-5 mb-4 mb-md-0">
+                <img lang="en" src="assets/imgs/MyPhoto.jpg" alt="Profile" class="rounded-circle profile-img">
+                <img lang="fa" src="assets/imgs/MyPhoto.jpg" alt="Profile" class="rounded-circle profile-img"
+                    style="transform: scaleX(-1);">
+            </div>
 
-      var theme = "dark";
-      const root = document.querySelector(":root");
-      const container = document.getElementsByClassName("theme-container")[0];
-      const themeIcon = document.getElementById("theme-icon");
-      container.addEventListener("click", setTheme);
-      function setTheme() {
-        switch (theme) {
-          case "dark":
-            setLight();
-            theme = "light";
-            break;
-          case "light":
-            setDark();
-            theme = "dark";
-            break;
-        }
-      }
-      function setLight() {
-        root.style.setProperty(
-          "--bs-dark",
-          "linear-gradient(318.32deg, #c3d1e4 0%, #dde7f3 55%, #d4e0ed 100%)"
-        );
-        container.classList.remove("shadow-dark");
-        setTimeout(() => {
-          container.classList.add("shadow-light");
-          themeIcon.classList.remove("change");
-        }, 300);
-        themeIcon.classList.add("change");
-        themeIcon.src = sun;
-      }
-      function setDark() {
-        root.style.setProperty("--bs-dark", "#212529");
-        container.classList.remove("shadow-light");
-        setTimeout(() => {
-          container.classList.add("shadow-dark");
-          themeIcon.classList.remove("change");
-        }, 300);
-        themeIcon.classList.add("change");
-        themeIcon.src = moon;
-      }
+            <div class="col-md-6 order-2 text-center text-md-start ps-md-4">
+                <h1 class="name-text" id="name">
+                    <span lang="en">Abbas Safardoost</span><span lang="fa">عباس صفردوست</span>
+                </h1>
+                <p class="subtitle-text">
+                    <span lang="en">Psycho & Computational Linguist, Developer,<br>Language Instructor,
+                        Translator</span>
+                    <span lang="fa">زبان-روان‌شناس، زبانشناس رایانشی،<br>توسعه‌دهنده، مدرس زبان، مترجم</span>
+                </p>
 
-      function openNav() {
-        document.getElementById("mySidebar").style.width = "70%";
-        document.getElementById("mySidebar").style.display = "block";
-      }
+                <div class="social-icons my-3">
+                    <a href="https://scholar.google.com/citations?user=sIJPorYAAAAJ&hl=en" aria-label="Google Scholar">
+                        <iconify-icon icon="academicons:google-scholar"></iconify-icon>
+                    </a>
+                    <a href="https://www.orcid.org/0000-0003-1814-5550" aria-label="ORCID">
+                        <iconify-icon icon="academicons:orcid"></iconify-icon>
+                    </a>
+                    <a href="https://www.researchgate.net/profile/Abbas-Safardoost" aria-label="ResearchGate">
+                        <iconify-icon icon="academicons:researchgate-square"></iconify-icon>
+                    </a>
+                    <a href="https://github.com/asdoost" aria-label="GitHub">
+                        <iconify-icon icon="akar-icons:github-fill"></iconify-icon>
+                    </a>
+                </div>
+                <div class="lang-wrapper">
+                    <label for="lang" class="lang">
+                        <span><span lang="en">English</span><span lang="fa">فارسی</span></span>
+                        <span class="lang-toggle-wrap">
+                            <input class="lang-toggle" type="checkbox" role="switch" id="langSwitch">
+                        </span>
+                        <span><span lang="en">Persian</span><span lang="fa">انگلیسی</span></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
 
-      function closeNav() {
-        document.getElementById("mySidebar").style.display = "none";
-      }
-
-      function openurl() {
-        window.open("fa/Home.htm", "_self")
-      }
-    </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/global.js"></script>
 </body>
 
 </html>

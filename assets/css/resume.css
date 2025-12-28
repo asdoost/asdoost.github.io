@@ -1,0 +1,719 @@
+/* ===================================
+   RESUME-SPECIFIC STYLES (resume.css)
+   =================================== */
+
+/* === RESUME HEADER === */
+.resume-header {
+    padding: 2rem 0;
+}
+
+.resume-header h1 {
+    color: var(--bs-body-color);
+    margin-bottom: 0.5rem;
+}
+
+.resume-header .btn-primary {
+    background: var(--gradient-primary);
+    border: none;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resume-header .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+/* === TAB NAVIGATION === */
+.tab-nav-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.tab-nav-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.resume-tabs {
+    gap: 0.5rem;
+    padding: 0.5rem;
+    min-width: max-content;
+}
+
+.resume-tabs .nav-link {
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    color: var(--bs-body-color);
+    background-color: var(--bs-tertiary-bg);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.resume-tabs .nav-link:hover {
+    background-color: var(--bs-secondary-bg);
+    transform: translateY(-2px);
+}
+
+.resume-tabs .nav-link.active {
+    background: var(--gradient-primary);
+    color: white;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.resume-tabs .nav-link i {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .resume-tabs .tab-text {
+        display: none;
+    }
+
+    .resume-tabs .nav-link {
+        padding: 0.75rem 1rem;
+    }
+
+    .resume-tabs .nav-link i {
+        margin: 0 !important;
+    }
+}
+
+/* === SECTION HEADER (Resume-specific) === */
+.section-header {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--bs-border-color);
+}
+
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* === SECTION COMMON STYLES === */
+.section-header {
+    margin-bottom: 60px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+}
+
+.section-subtitle {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+[data-bs-theme="dark"] .section-subtitle {
+    color: #adb5bd;
+}
+
+/* === TIMELINE STYLES (Resume-specific) === */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.5rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--gradient-primary);
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 2rem;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideIn 0.6s ease forwards;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-item:nth-child(even) {
+    transform: translateX(20px);
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -1.75rem;
+    top: 0.25rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: var(--bs-body-bg);
+    border: 3px solid #667eea;
+    z-index: 1;
+}
+
+.timeline-marker.current {
+    background: #667eea;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.2);
+}
+
+.education-marker.phd {
+    border-color: #667eea;
+}
+
+.education-marker.masters {
+    border-color: #17a2b8;
+}
+
+.education-marker.bachelors {
+    border-color: #6c757d;
+}
+
+.timeline-content {
+    background: var(--bs-tertiary-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-content:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.timeline-institution {
+    color: var(--bs-secondary-color);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-meta {
+    color: var(--bs-secondary-color);
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.timeline-description {
+    color: var(--bs-body-color);
+    margin-bottom: 0.75rem;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Add delay for staggered animation */
+.timeline-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.timeline-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.timeline-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.timeline-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.timeline-item:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+/* Enhanced card hover effects */
+.content-card {
+    background: var(--bs-body-bg);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--bs-border-color);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+[data-bs-theme="dark"] .content-card {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* === THESIS CARD === */
+.thesis-card {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: var(--bs-body-bg);
+    border-radius: 8px;
+    border-left: 3px solid #667eea;
+}
+
+.thesis-card h6 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #667eea;
+}
+
+.thesis-title {
+    font-style: italic;
+    margin-bottom: 0.75rem;
+}
+
+.abstract-content {
+    padding: 1rem;
+    background: var(--bs-tertiary-bg);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+/* === PUBLICATIONS === */
+.publication-section {
+    margin-bottom: 2.5rem;
+}
+
+.publication-section:last-child {
+    margin-bottom: 0;
+}
+
+.subsection-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px dashed var(--bs-border-color);
+}
+
+.subsection-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--gradient-primary);
+    color: white;
+    border-radius: 10px;
+}
+
+.publication-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.publication-card {
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--bs-tertiary-bg);
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid transparent;
+}
+
+.publication-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: #667eea;
+}
+
+.publication-year {
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #667eea;
+    min-width: 60px;
+}
+
+.publication-body {
+    flex: 1;
+}
+
+.publication-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.publication-title a {
+    color: var(--bs-body-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.publication-title a:hover {
+    color: #667eea;
+}
+
+.publication-journal {
+    color: var(--bs-secondary-color);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.publication-doi {
+    font-size: 0.85rem;
+}
+
+.publication-doi a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.publication-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    color: var(--bs-secondary-color);
+    font-size: 0.9rem;
+}
+
+/* === PROJECTS GRID === */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    padding: 1.5rem;
+    background: var(--bs-tertiary-bg);
+    border-radius: 16px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-color: #667eea;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: var(--gradient-primary);
+    color: white;
+    border-radius: 12px;
+    font-size: 1.25rem;
+}
+
+.project-title {
+    flex: 1;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.project-status {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.project-status.active {
+    background: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+}
+
+.project-description {
+    color: var(--bs-secondary-color);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    flex: 1;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-links {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid var(--bs-border-color);
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    color: #667eea;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.project-link:hover {
+    color: #764ba2;
+}
+
+/* === CERTIFICATES ACCORDION === */
+.certificates-accordion .accordion-item {
+    border: none;
+    background: transparent;
+    margin-bottom: 1rem;
+}
+
+.certificates-accordion .accordion-button {
+    background: var(--bs-tertiary-bg);
+    border-radius: 12px !important;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    box-shadow: none;
+    border: 1px solid var(--bs-border-color);
+}
+
+.certificates-accordion .accordion-button:not(.collapsed) {
+    background: var(--gradient-primary);
+    color: white;
+    border-color: transparent;
+}
+
+.certificates-accordion .accordion-button:not(.collapsed) .category-icon,
+.certificates-accordion .accordion-button:not(.collapsed) .badge {
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+}
+
+.certificates-accordion .accordion-button::after {
+    background-size: 1rem;
+}
+
+.certificates-accordion .accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+}
+
+.category-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--bs-secondary-bg);
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+.category-title {
+    flex: 1;
+}
+
+.certificates-accordion .accordion-body {
+    padding: 1rem 0 0 0;
+}
+
+.certificate-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.certificate-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    background: var(--bs-tertiary-bg);
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+}
+
+.certificate-item:hover {
+    background: var(--bs-secondary-bg);
+    border-color: #667eea;
+}
+
+.certificate-item.highlight {
+    border-left: 3px solid #667eea;
+}
+
+.cert-info h6 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.cert-issuer {
+    font-size: 0.8rem;
+    color: var(--bs-secondary-color);
+}
+
+.cert-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: rgba(102, 126, 234, 0.1);
+    color: #667eea;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.cert-link:hover {
+    background: #667eea;
+    color: white;
+}
+
+/* === FOOTER (Resume-specific) === */
+footer {
+    background: var(--bs-tertiary-bg);
+    border-top: 1px solid var(--bs-border-color);
+}
+
+/* === RTL SUPPORT (Persian/Farsi) === */
+[dir="rtl"] .timeline {
+    padding-left: 0;
+    padding-right: 2rem;
+}
+
+/* Move the vertical line to the right */
+[dir="rtl"] .timeline::before {
+    left: auto;
+    right: 0.5rem;
+}
+
+/* Move the dots (markers) to the right */
+[dir="rtl"] .timeline-marker {
+    left: auto;
+    right: -1.75rem;
+}
+
+/* Move the Thesis card accent border to the right */
+[dir="rtl"] .thesis-card {
+    border-left: none;
+    border-right: 3px solid #667eea;
+}
+
+/* Move Certificate highlight border to the right */
+[dir="rtl"] .certificate-item.highlight {
+    border-left: none;
+    border-right: 3px solid #667eea;
+}
+
+/* Fix spacing for the category icons in certificates */
+[dir="rtl"] .category-icon {
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+/* Mobile adjustments for RTL */
+@media (max-width: 576px) {
+    [dir="rtl"] .timeline {
+        padding-right: 1.5rem;
+    }
+
+    [dir="rtl"] .timeline::before {
+        right: 0.35rem;
+    }
+
+    [dir="rtl"] .timeline-marker {
+        right: -1.4rem;
+    }
+}
+
+/* === TAG STYLES === */
+.tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: rgba(102, 126, 234, 0.1);
+    color: #667eea;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+[data-bs-theme="dark"] .tag {
+    background: rgba(102, 126, 234, 0.2);
+}
+
+@media (max-width: 576px) {
+    .content-card {
+        padding: 1.25rem;
+        border-radius: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .timeline-item {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 1.5rem;
+    }
+
+    .timeline::before {
+        left: 0.25rem;
+    }
+
+    .timeline-marker {
+        left: -1.25rem;
+        width: 0.75rem;
+        height: 0.75rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}

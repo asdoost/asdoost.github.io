@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بلاگ</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet"
+        id="bootstrap-rtl-link">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/global.css">
+    <link type="text/css" rel="stylesheet" href="../css/blog.css">
+</head>
+
+<body>
+
+    <!-- 1. Menu Button -->
+    <button class="floating-btn" type="button" id="sidebar-toggler" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="material-symbols-outlined fs-2">menu</span>
+    </button>
+
+    <!-- 2. Sidebar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header pb-0">
+            <h5 class="offcanvas-title visually-hidden" id="offcanvasNavbarLabel">منو</h5>
+        </div>
+        <div class="offcanvas-body d-flex flex-column h-100 mt-5">
+            <nav aria-label="Primary navigation">
+                <a class="nav-link-custom" href="../../index.html">
+                    <span class="nav-icon material-symbols-outlined" aria-hidden="true">home</span>
+                    خانه
+                </a>
+                <a class="nav-link-custom" href="../fa/resume.html">
+                    <span class="nav-icon material-symbols-outlined" aria-hidden="true">description</span>
+                    رزومه
+                </a>
+                <a class="nav-link-custom" href="../fa/blog.html">
+                    <span class="nav-icon material-symbols-outlined" aria-hidden="true">article</span>
+                    بلاگ
+                </a>
+                <a class="nav-link-custom" href="../fa/gallery.html">
+                    <span class="nav-icon material-symbols-outlined" aria-hidden="true">photo_library</span>
+                    گالری
+                </a>
+            </nav>
+            <div class="togglers mt-auto">
+                <div class="theme-wrapper">
+                    <label for="theme" class="theme">
+                        <span>روشن</span>
+                        <span class="theme__toggle-wrap">
+                            <input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme"
+                                value="dark">
+                            <span class="theme__icon">
+                                <span class="theme__icon-part"></span><span class="theme__icon-part"></span><span
+                                    class="theme__icon-part"></span>
+                                <span class="theme__icon-part"></span><span class="theme__icon-part"></span><span
+                                    class="theme__icon-part"></span>
+                                <span class="theme__icon-part"></span><span class="theme__icon-part"></span><span
+                                    class="theme__icon-part"></span>
+                            </span>
+                        </span>
+                        <span>تاریک</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">
+                    <span>وبلاگ</span>
+                </h1>
+                <p class="section-subtitle">
+                    <span>اندیشه‌ها، داستان‌ها و ایده‌ها</span>
+                </p>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <input type="text" class="search-input" id="searchInput" placeholder="Search articles...">
+                    <button class="search-btn" id="searchBtn">
+                        <span class="material-symbols-outlined">search</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="همه">
+                    <span>همه</span>
+                </button>
+                <button class="filter-btn" data-filter="تکامل">
+                    <span>تکامل</span>
+                </button>
+                <button class="filter-btn" data-filter="فراگیری زبان">
+                    <span>فراگیری زبان</span>
+                </button>
+                <button class="filter-btn" data-filter="هوش مصنوعی">
+                    <span>هوش مصنوعی</span>
+                </button>
+                <button class="filter-btn" data-filter="شخصی">
+                    <span>شخصی</span>
+                </button>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid">
+
+                <!-- Featured Post -->
+                <article class="blog-card featured-post fade-in" data-category="linguistics">
+                    <div class="blog-card-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1679934135314-3ad7205beac2?w=800" loading="lazy"
+                            alt="Featured Post">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="featured-badge">
+                            <span class="material-symbols-outlined" style="font-size: 1rem;">star</span>
+                            <span>ویژه</span>
+                        </span>
+                        <div class="blog-card-meta">
+                            <span>
+                                <span class="material-symbols-outlined">calendar_month</span>
+                                <span>۳۰ آبان ۱۴۰۳</span>
+                            </span>
+                            <span>
+                                <span class="material-symbols-outlined">schedule</span>
+                                <span>۸ دقیقه</span>
+                            </span>
+                        </div>
+                        <h2 class="blog-card-title">
+                            <a href="blog-post.html?id=post-3-fa">
+                                نوزادان واقعاً چطور کلمات را یاد می‌گیرند؟ راز پنهان در گرامر
+                            </a>
+                        </h2>
+                        <p class="blog-card-excerpt">
+                            تا حالا دیدید یه بچه کوچیک به گربه اشاره کنه و بگه «هاپو»؟ ما معمولاً لبخند می‌زنیم و رد
+                            می‌شیم، اما پشت این اشتباهات بامزه، یک مغز کوچیک و نابغه داره سخت‌ترین کد دنیا رو رمزگشایی
+                            می‌کنه: زبان انسان.
+                        </p>
+                        <div class="blog-card-footer">
+                            <div class="blog-card-author">
+                                <img src="../imgs/MyPhoto.jpg" loading="lazy" alt="Author">
+                                <span>عباس</span>
+                            </div>
+                            <a href="blog-post.html?id=post-3-fa" class="read-more-btn">
+                                <span>ادامه مطلب</span>
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Card 1 -->
+                <article class="blog-card fade-in" data-category="تکامل">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1692607038273-8f45f4b0b1c7?w=800" alt="Blog Post"
+                            loading="lazy">
+                        <span class="blog-card-category">
+                            <span>تکامل</span>
+                        </span>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span>
+                                <span class="material-symbols-outlined">calendar_month</span>
+                                <span>۳۰ اسفند ۱۴۰۳</span>
+                            </span>
+                            <span>
+                                <span class="material-symbols-outlined">schedule</span>
+                                <span>۵ دقیقه</span>
+                            </span>
+                        </div>
+                        <h3 class="blog-card-title">
+                            <a href="blog-post.html?id=post-1-fa">
+                                راز ۱۳۵ هزار ساله: ما انسان‌ها کی شروع به حرف زدن کردیم؟
+                            </a>
+                        </h3>
+                        <p class="blog-card-excerpt">
+                            این یکی از عمیق‌ترین سوالات تاریخ ماست: ما کی از درآوردن صداهای ساده دست برداشتیم و واقعاً
+                            شروع به <em>صحبت کردن</em> کردیم؟ یک تحقیق جدید نشان می‌دهد
+                        </p>
+                        <div class="blog-card-footer">
+                            <div class="blog-card-author">
+                                <img src="../imgs/MyPhoto.jpg" loading="lazy" alt="Author">
+                                <span>عباس</span>
+                            </div>
+                            <a href="blog-post.html?id=post-1-fa" class="read-more-btn">
+                                <span>ادامه مطلب</span>
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Card 2 -->
+                <article class="blog-card fade-in" data-category="هوش مصنوعی">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200" alt="Blog Post"
+                            loading="lazy">
+                        <span class="blog-card-category">
+                            <span>هوش مصنوعی</span>
+                        </span>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span>
+                                <span class="material-symbols-outlined">calendar_month</span>
+                                <span>۱۱ بهمن ۱۴۰۳</span>
+                            </span>
+                            <span>
+                                <span class="material-symbols-outlined">schedule</span>
+                                <span>۶ دقیقه</span>
+                            </span>
+                        </div>
+                        <h3 class="blog-card-title">
+                            <a href="blog-post.html?id=post-2-fa">
+                                <span>آیا هوش مصنوعی می‌تواند مثل یک کودک زبان یاد بگیرد؟</span>
+                            </a>
+                        </h3>
+                        <p class="blog-card-excerpt">
+                            تا حالا با دقت به یادگیری زبان یک کودک نوپا نگاه کردید؟ پر از آزمون و خطا، بازی و خنده است.
+                            اما هوش مصنوعی‌های امروزی این‌طور یاد نمی‌گیرند. یک تحقیق جدید نشان می‌دهد اگر هوش واقعی
+                            می‌خواهیم، باید کتاب‌ها را از دست کامپیوترها بگیریم و
+                        </p>
+                        <div class="blog-card-footer">
+                            <div class="blog-card-author">
+                                <img src="../imgs/MyPhoto.jpg" loading="lazy" alt="Author">
+                                <span>عباس</span>
+                            </div>
+                            <a href="blog-post.html?id=post-2-fa" class="read-more-btn">
+                                <span>ادامه مطلب</span>
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Card 3 -->
+                <article class="blog-card fade-in" data-category="فراگیری زبان">
+                    <div class="blog-card-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1679934135314-3ad7205beac2?w=800" alt="Blog Post"
+                            loading="lazy">
+                        <span class="blog-card-category">
+                            <span>فراگیری زبان</span>
+                        </span>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span>
+                                <span class="material-symbols-outlined">calendar_month</span>
+                                <span>۳۰ آبان ۱۴۰۳</span>
+                            </span>
+                            <span>
+                                <span class="material-symbols-outlined">schedule</span>
+                                <span>۷ دقیقه</span>
+                            </span>
+                        </div>
+                        <h3 class="blog-card-title">
+                            <a href="blog-post.html?id=post-3-fa">
+                                نوزادان واقعاً چطور کلمات را یاد می‌گیرند؟ راز پنهان در گرامر
+                            </a>
+                        </h3>
+                        <p class="blog-card-excerpt">
+                            تا حالا دیدید یه بچه کوچیک به گربه اشاره کنه و بگه «هاپو»؟ ما معمولاً لبخند می‌زنیم و رد
+                            می‌شیم، اما پشت این اشتباهات بامزه، یک مغز کوچیک و نابغه داره سخت‌ترین کد دنیا رو رمزگشایی
+                            می‌کنه: زبان انسان.
+                        </p>
+                        <div class="blog-card-footer">
+                            <div class="blog-card-author">
+                                <img src="../imgs/MyPhoto.jpg" loading="lazy" alt="Author">
+                                <span>عباس</span>
+                            </div>
+                            <a href="blog-post.html?id=post-3-fa" class="read-more-btn">
+                                <span>ادامه مطلب</span>
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination-container">
+                <a href="#" class="page-btn disabled">
+                    <span class="material-symbols-outlined">chevron_left</span>
+                </a>
+                <a href="#" class="page-btn active">1</a>
+                <a href="#" class="page-btn disabled">2</a>
+                <a href="#" class="page-btn disabled">3</a>
+                <a href="#" class="page-btn disabled">
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>
+                <span>&copy; ۲۰۲۵ عباس. تمامی حقوق محفوظ است.</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/global.js"></script>
+</body>
+
+</html>
