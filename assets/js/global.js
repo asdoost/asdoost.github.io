@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* =========================================
        1. THEME TOGGLER
        ========================================= */
-    const currentTheme = localStorage.getItem('theme') || 'light';
+    const currentTheme = localStorage.getItem('theme') || 'dark';
     htmlElement.setAttribute('data-bs-theme', currentTheme);
     if (themeSwitch && currentTheme === 'dark') {
         themeSwitch.checked = true;
