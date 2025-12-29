@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         authorName: document.querySelector('.author-name'),
         authorRole: document.querySelector('.author-role'),
         authorImg: document.querySelector('.author-avatar'),
-        tagsContainer: document.querySelector('.post-tags'), // <--- NEW SELECTOR
+        tagsContainer: document.querySelector('.post-tags'),
         pageTitle: document.title
     };
 
