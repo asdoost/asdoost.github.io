@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: assets/en/resume.html
-Disallow: assets/fa/resume.html
-Disallow: assets/en/gallery.html
-Disallow: assets/fa/gallery.html
